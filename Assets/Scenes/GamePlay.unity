@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 324492714}
   - component: {fileID: 324492717}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 524443083}
   - component: {fileID: 524443086}
   m_Layer: 0
-  m_Name: Road
+  m_Name: Road1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524443082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.62, z: 0}
+  m_LocalPosition: {x: 22.8, y: -2.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1506905891}
@@ -497,7 +497,7 @@ MonoBehaviour:
   - {fileID: 7830594240721163612, guid: 2a22fff60c014634c9c90d83a632bb4f, type: 3}
   - {fileID: 7830594240721163612, guid: 2a22fff60c014634c9c90d83a632bb4f, type: 3}
   - {fileID: 7830594240721163612, guid: 2a22fff60c014634c9c90d83a632bb4f, type: 3}
-  nextPathPosition: {x: 2, y: 0, z: 0}
+  nextPathPosition: {x: 0, y: 0, z: 0}
   player: {fileID: 324492713}
   pathDrawDistance: 30
   pathDeleteDistance: 15
@@ -509,7 +509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874074005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -24.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 524443085}
@@ -716,7 +716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009423282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 9.5, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
