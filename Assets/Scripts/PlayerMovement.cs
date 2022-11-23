@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;
     public bool isGrounded;
     public int speed;
+    private EnemyMovement enemyMovement;
     // Start is called before the first frame update
     void Start()
     {
+        enemyMovement = GameObject.FindGameObjectWithTag("EnemyMovement").GetComponent<EnemyMovement>();
         rb = GetComponent<Rigidbody2D>();
 
     }
@@ -40,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+        if(collision.gameObject.tag=="Obstacle")
+        {
+            enemyMovement.speed = 0;
         }
         
     }
