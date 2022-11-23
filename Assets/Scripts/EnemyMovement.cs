@@ -9,6 +9,10 @@ public class EnemyMovement : MonoBehaviour
     public bool isGrounded;
     public int speed;
     // Start is called before the first frame update
+    public static EnemyMovement instance;
+    private void Awake() {
+        instance = this;
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
