@@ -19,6 +19,21 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 4);
+
+        if(hit.collider != null)
+        {
+            Debug.Log(hit.collider.tag);
+            if(hit.collider.tag == "Obstacle")
+            {
+                if(isGrounded == true)
+                {
+                    isGrounded = false;
+                    rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                }
+            }
+            //if(hit.collider.gameObject.name)
+        }
         
         
     }
