@@ -8,10 +8,16 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;
     public bool isGrounded;
     public int speed;
+
+    public LayerMask whatIsGrounded;
+
+    private Collider2D myCollider;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        myCollider = GetComponent<Collider2D>();
 
     }
 
@@ -20,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
         
+        isGrounded = Physics2D.IsTouchingLayers(myCollider, whatIsGrounded);
+
         if(Input.GetButtonDown("Jump") && isGrounded == true)
         {
             isGrounded = false;
