@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class SingletonReference : MonoBehaviour
 {
-    // public GameStateManager GameStateManager;
+    public GameStateManager GameStateManager;
 
 
-    // private void Awake()
-    // {
-    //     GameStateManager.Init();
-    // }
+    private void Awake()
+    {
+        GameStateManager.Init();
+    }
 }
