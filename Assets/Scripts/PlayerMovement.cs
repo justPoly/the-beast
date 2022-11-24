@@ -18,13 +18,14 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         myCollider = GetComponent<Collider2D>();
+        transform.Translate(Vector2.right * Time.deltaTime * speed);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * Time.deltaTime * speed);
+        
         
         isGrounded = Physics2D.IsTouchingLayers(myCollider, whatIsGrounded);
 
