@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    mixer: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
+  - name: Background
+    clip: {fileID: 8300000, guid: 17dbf1adecf95f44b853549d2327a5d6, type: 3}
+    mixer: {fileID: 7894159483494268369, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    volume: 0.55
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
   soundSO: []

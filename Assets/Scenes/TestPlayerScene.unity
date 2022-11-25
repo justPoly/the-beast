@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 104779666}
   - component: {fileID: 104779665}
   - component: {fileID: 104779664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,6 +175,9 @@ MonoBehaviour:
   jumpForce: 70
   isGrounded: 0
   speed: 4
+  whatIsGrounded:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!50 &104779666
 Rigidbody2D:
   serializedVersion: 4
@@ -589,7 +592,7 @@ GameObject:
   - component: {fileID: 699006054}
   - component: {fileID: 699006053}
   - component: {fileID: 699006052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Ground
   m_Icon: {fileID: 0}
