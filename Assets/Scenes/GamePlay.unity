@@ -967,10 +967,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c37664dffc9e6498b90dbfd0b9e830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0
+  score: 0
   scoreText: {fileID: 789219315}
   OnGameEnded: {fileID: 11400000, guid: ef3aae6105f1c2d48a9879e2569b192a, type: 2}
   GameOverPanel: {fileID: 573926511}
+  isGameOver: 0
 --- !u!4 &315008375
 Transform:
   m_ObjectHideFlags: 0
@@ -1357,7 +1358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.658, y: 1045}
+  m_AnchoredPosition: {x: 14.658, y: 1102}
   m_SizeDelta: {x: 2015.245, y: 1062.555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559556116
@@ -1505,6 +1506,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1921727480}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 602179958}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1529,22 +1542,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1921727480}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   PrivateResponse:
     m_PersistentCalls:
       m_Calls: []
-  invokeCheckOnEnable: 0
+  invokeCheckOnEnable: 1
   m_disableFirstEvent: 0
 --- !u!114 &573926514
 MonoBehaviour:
@@ -2286,7 +2287,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1018595976
 RectTransform:
@@ -3120,6 +3121,22 @@ PrefabInstance:
     - target: {fileID: 9199112511031022953, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199112511049700553, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199112511049700553, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199112511049700553, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199112511049700554, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
