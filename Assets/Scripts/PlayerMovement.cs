@@ -49,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
+        if(collision.gameObject.CompareTag("Obstacle"))
+        {
+            speed = 0;
+            EnemyMovement.instance.speed = 0;
+        }
         
     }
     void OnCollisionExit2D(Collision2D collision) 
