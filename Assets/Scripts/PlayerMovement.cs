@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask whatIsGrounded;
 
+    // public GameObject pan;
+
     private Collider2D Collider;
     // Start is called before the first frame update
     void Start()
@@ -53,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 0;
             EnemyMovement.instance.speed = 0;
+            GameManager.instance.GameOver();
         }
         
     }
