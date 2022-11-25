@@ -6,12 +6,14 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public float distance;
+    private float distance;
+    public int score;
     public TextMeshProUGUI scoreText;
 
     [Header("GameEvent")]
     public GameEvent OnGameEnded;
     public GameObject GameOverPanel;
+    public bool isGameOver;
 
     public static GameManager instance;
 
@@ -20,17 +22,28 @@ public class GameManager : MonoBehaviour
         instance = this;
 
     }
+    void Start()
+    {
+        isGameOver = true;
+    }
 
     void Update ()
     {
-        scoreText.text = "Score: " + distance.ToString();
-        distance += Time.deltaTime;
+        if(isGameOver == true)
+        {
+            
+            distance += Time.deltaTime;
+            score = (int)distance;
+            scoreText.text = "Score: " + score.ToString();
+        }
     }
 
     public void GameOver()
     {
-       GameOverPanel.SetActive(true);
-       OnGameEnded.Raise();
+        isGameOver = false;
+        GameOverPanel.SetActive(true);
+        OnGameEnded.Raise();
+
     }
 
 }
