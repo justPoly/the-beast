@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 0;
             EnemyMovement.instance.speed = 0;
+            // TempManager.instance.GameOver();
         }
         
     }
