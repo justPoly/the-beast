@@ -588,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 50
   isGrounded: 0
-  speed: 4
+  speed: 8
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 256
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 6
   isGrounded: 0
-  speed: 4
+  speed: 8
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 256
@@ -1653,7 +1653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789964015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.88, y: 0.529, z: 0}
+  m_LocalPosition: {x: -24.282, y: 0.529, z: 0}
   m_LocalScale: {x: 0.5406, y: 0.8868, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
