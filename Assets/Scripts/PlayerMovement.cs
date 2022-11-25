@@ -11,13 +11,13 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask whatIsGrounded;
 
-    private Collider2D myCollider;
+    private Collider2D Collider;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
-        myCollider = GetComponent<Collider2D>();
+        Collider = GetComponent<Collider2D>();
 
     }
 
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
         
-        isGrounded = Physics2D.IsTouchingLayers(myCollider, whatIsGrounded);
+        isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
 
         if(Input.GetButtonDown("Jump") && isGrounded == true)
         {
