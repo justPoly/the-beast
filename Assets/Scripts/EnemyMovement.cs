@@ -8,9 +8,17 @@ public class EnemyMovement : MonoBehaviour
     public float jumpForce = 10f;
     public bool isGrounded;
     public int speed;
+<<<<<<< HEAD
     public LayerMask whatIsGrounded;
 
     private Collider2D myCollider;
+=======
+
+    public LayerMask whatIsGrounded;
+
+    private Collider2D Collider;
+    
+>>>>>>> e0a4db89bbbdd8767e04c48698f86bbf7d22376b
     // Start is called before the first frame update
     public static EnemyMovement instance;
     private void Awake() {
@@ -19,13 +27,24 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+<<<<<<< HEAD
+=======
+
+        Collider = GetComponent<Collider2D>();
+
+>>>>>>> e0a4db89bbbdd8767e04c48698f86bbf7d22376b
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
+<<<<<<< HEAD
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 4);
+=======
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 3);
+        isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
+>>>>>>> e0a4db89bbbdd8767e04c48698f86bbf7d22376b
 
         if(hit.collider != null)
         {
