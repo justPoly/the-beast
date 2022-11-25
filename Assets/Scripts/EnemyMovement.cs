@@ -5,14 +5,14 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float jumpForce = 10f;
+    public float jumpForce = 6f;
     public bool isGrounded;
     public int speed;
 
     public LayerMask whatIsGrounded;
 
     private Collider2D Collider;
-    
+
     // Start is called before the first frame update
     public static EnemyMovement instance;
     private void Awake() {
