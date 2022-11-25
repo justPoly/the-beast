@@ -25,12 +25,22 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 6);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 4);
 
         if(hit.collider != null)
         {
             Debug.Log(hit.collider.tag);
             if(hit.collider.tag == "Obstacle")
+            {
+                Debug.Log(hit.collider.tag);
+                if(isGrounded == true)
+                {
+                    isGrounded = false;
+                    rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                    
+                }
+            }
+            if(hit.collider.tag == "LongObstacle")
             {
                 Debug.Log(hit.collider.tag);
                 if(isGrounded == true)
@@ -61,7 +71,7 @@ public class EnemyMovement : MonoBehaviour
         
         
     }
-    void OnTriggerEnter2D(Collider2D collision) 
+    /*void OnTriggerEnter2D(Collider2D collision) 
     {
         if(collision.tag == "Obstacle")// When target is hit
         {
@@ -72,5 +82,5 @@ public class EnemyMovement : MonoBehaviour
             }
         }
         
-    }
+    }*/
 }

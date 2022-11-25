@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -399,7 +399,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 1
 --- !u!114 &324492718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 80
   isGrounded: 0
-  speed: 5
+  speed: 3
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 256
@@ -1272,6 +1272,7 @@ GameObject:
   - component: {fileID: 2143234665}
   - component: {fileID: 2143234666}
   - component: {fileID: 2143234664}
+  - component: {fileID: 2143234669}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1319,7 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 80
   isGrounded: 0
-  speed: 5
+  speed: 3
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 0
@@ -1343,7 +1344,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 1
 --- !u!212 &2143234667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1409,3 +1410,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2143234669
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143234663}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.4109441, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.34215057
