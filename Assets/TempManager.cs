@@ -5,10 +5,16 @@ using UnityEngine;
 public class TempManager : MonoBehaviour
 {
     [Header("GameEvents")]
-    // public GameEvent OnGameEnded;
+    public GameEvent OnGameEnded;
     public GameObject pan;
 
     public static TempManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +30,7 @@ public class TempManager : MonoBehaviour
 
     public void GameOver()
     {
-       gameObject.SetActive(true);
-    //    OnGameEnded.Raise();
+       pan.SetActive(true);
+       OnGameEnded.Raise();
     }
 }
