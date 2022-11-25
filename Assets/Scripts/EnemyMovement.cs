@@ -42,7 +42,8 @@ public class EnemyMovement : MonoBehaviour
                 if(isGrounded == true)
                 {
                     isGrounded = false;
-                    rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                    
                     
                 }
             }
