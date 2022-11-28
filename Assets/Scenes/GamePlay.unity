@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -967,10 +967,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c37664dffc9e6498b90dbfd0b9e830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0
+  score: 0
   scoreText: {fileID: 789219315}
   OnGameEnded: {fileID: 11400000, guid: ef3aae6105f1c2d48a9879e2569b192a, type: 2}
   GameOverPanel: {fileID: 573926511}
+  isGameOver: 0
 --- !u!4 &315008375
 Transform:
   m_ObjectHideFlags: 0
@@ -1931,7 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3b1d026195a0141a2b63797810f6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 15
+  jumpForce: 10
   isGrounded: 0
   speed: 8
   whatIsGrounded:
