@@ -29,7 +29,17 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * Time.deltaTime * speed);
+
+    }
+    void FixedUpdate()
+    {
+        transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
+        CheckForObstacles();
+        
+        
+    }
+    public void CheckForObstacles()
+    {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 3);
         isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
 
@@ -53,14 +63,12 @@ public class EnemyMovement : MonoBehaviour
                 if(isGrounded == true)
                 {
                     isGrounded = false;
-                    rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                     
                 }
             }
             //if(hit.collider.gameObject.name)
         }
-        
-        
     }
     
     void OnCollisionEnter2D(Collision2D collision) 

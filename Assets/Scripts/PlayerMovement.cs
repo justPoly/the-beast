@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 50f;
     public bool isGrounded;
     public int speed;
+    public Transform groundCheck;
 
     public LayerMask whatIsGrounded;
 
@@ -26,24 +27,35 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * Time.deltaTime * speed);
+        
+    }
+    void FixedUpdate()
+    {
+        transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         
         isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
 
-        if(Input.GetButtonDown("Jump") && isGrounded == true)
+        if(Input.GetMouseButtonDown(0) && isGrounded == true)
         {
             isGrounded = false;
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            
         }
-    }
-    public void PlayerJump()
-    {
-        if(isGrounded == true)
+        /*
+        if(rb.velocity.y <0)
         {
-            isGrounded = false;
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            rb.gravityScale = fallMultiplier;
         }
+        else if(rb.velocity.y >0 && Input.GetButton("Jump"))
+        {
+            rb.gravityScale = lowJumpMultiplier;
+        }
+        else
+        {
+            rb.gravityScale = 1f;
+        }*/
     }
+    
     void OnCollisionEnter2D(Collision2D collision) 
     {
         // When target is hit
