@@ -586,9 +586,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f282d391f8637a44d8fc7b345019025c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 5
+  jumpForce: 10
   isGrounded: 0
   speed: 8
+  groundCheck: {fileID: 0}
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 256
