@@ -26,13 +26,13 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        isGameOver = true;
+        isGameOver = false;
         highScore =PlayerPrefs.GetInt("HighScore", score);
     }
 
     void Update ()
     {
-        if(isGameOver == true)
+        if(isGameOver == false)
         {
             
             distance += Time.deltaTime;
@@ -63,9 +63,11 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
-        isGameOver = false;
+        isGameOver = true;
         GameOverPanel.SetActive(true);
         OnGameEnded.Raise();
+        EnemyMovement.instance.speed = 7;
+        PlayerMovement.instance.speed = 0;
 
     }
 

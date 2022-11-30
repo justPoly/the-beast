@@ -67,6 +67,7 @@ public class EnemyMovement : MonoBehaviour
                     
                 }
             }
+
             //if(hit.collider.gameObject.name)
         }
     }
@@ -77,6 +78,10 @@ public class EnemyMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+        if(collision.gameObject.CompareTag("Player") && GameManager.instance.isGameOver == true)
+        {
+            speed = 0;
         }
         
     }
