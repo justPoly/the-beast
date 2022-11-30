@@ -66,10 +66,13 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         GameOverPanel.SetActive(true);
         OnGameEnded.Raise();
-        EnemyMovement.instance.speed = 7;
+        //
+        
         PlayerMovement.instance.speed = 0;
+        
 
     }
+
 
 }
 

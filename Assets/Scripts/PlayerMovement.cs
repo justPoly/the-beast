@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("Obstacle"))
         {
-            speed = 0;
+            
             
             GameManager.instance.GameOver();
         }

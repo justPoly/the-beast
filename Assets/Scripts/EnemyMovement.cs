@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     public LayerMask whatIsGrounded;
 
     private Collider2D Collider;
-
+    public bool canJump;
     // Start is called before the first frame update
     public static EnemyMovement instance;
     private void Awake() {
@@ -48,9 +48,11 @@ public class EnemyMovement : MonoBehaviour
             Debug.Log(hit.collider.tag);
             if(hit.collider.tag == "Obstacle")
             {
+                canJump = true;
                 Debug.Log(hit.collider.tag);
-                if(isGrounded == true)
+                if(isGrounded == true && canJump == true)
                 {
+                    canJump = false;
                     isGrounded = false;
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                     
@@ -59,14 +61,17 @@ public class EnemyMovement : MonoBehaviour
             }
             if(hit.collider.tag == "LongObstacle")
             {
+                canJump = true;
                 Debug.Log(hit.collider.tag);
-                if(isGrounded == true)
+                if(isGrounded == true && canJump == true)
                 {
+                    canJump = false;
                     isGrounded = false;
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                     
                 }
             }
+            
 
             //if(hit.collider.gameObject.name)
         }
@@ -81,7 +86,9 @@ public class EnemyMovement : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("Player") && GameManager.instance.isGameOver == true)
         {
-            speed = 0;
+            rb.velocity = Vector2.zero;
+            jumpForce = 0;
+            canJump = false;
         }
         
     }
