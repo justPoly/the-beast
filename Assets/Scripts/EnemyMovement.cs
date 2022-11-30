@@ -88,6 +88,7 @@ public class EnemyMovement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             jumpForce = 0;
+            speed =0;
             canJump = false;
         }
         
