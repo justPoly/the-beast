@@ -81,7 +81,8 @@ public class PlayerMovement : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("Obstacle"))
         {
-            
+            rb.velocity = Vector2.zero;
+            jumpForce = 0;
             
             GameManager.instance.GameOver();
         }
