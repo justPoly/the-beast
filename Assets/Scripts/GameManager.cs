@@ -37,20 +37,30 @@ public class GameManager : MonoBehaviour
             
             distance += Time.deltaTime;
             score = (int)distance;
-            
             scoreText.text = "Score: " + score.ToString();
-            highScoreText.text = "Score: " + highScore.ToString();
+            
+            highScoreText.text = "High Score: " + HighScore().ToString();
+
             
         }
+        
+        
+    }
+    public int HighScore()
+    {
         if(highScore<score)
         {
             PlayerPrefs.SetInt("HighScore", score);
             highScore =PlayerPrefs.GetInt("HighScore", score);
-            highScoreText.text = "Highest Score: " + highScore.ToString();
+            
+            
         }
-        
+        if(highScore == 0)
+        {
+            highScoreText.gameObject.SetActive(false);
+        }
+        return highScore;
     }
-
     public void GameOver()
     {
         isGameOver = false;
