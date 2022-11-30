@@ -15,6 +15,13 @@ public class PlayerMovement : MonoBehaviour
     // public GameObject pan;
 
     private Collider2D Collider;
+    public static PlayerMovement instance;
+
+    private void Awake()
+    {
+        instance = this;
+
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -31,16 +38,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
-        
-        isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
-
-        if(Input.GetMouseButtonDown(0) && isGrounded == true)
-        {
-            isGrounded = false;
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            
-        }
+        PlayerMoveRight();
+        PlayerJump();
         /*
         if(rb.velocity.y <0)
         {
@@ -55,6 +54,23 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = 1f;
         }*/
     }
+    public void PlayerMoveRight()
+    {
+        transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
+    }
+    public void PlayerJump()
+    {
+
+        
+        isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
+
+        if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
+        {
+            isGrounded = false;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            
+        }
+    }
     
     void OnCollisionEnter2D(Collision2D collision) 
     {
@@ -66,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("Obstacle"))
         {
             speed = 0;
-            EnemyMovement.instance.speed = 0;
+            
             GameManager.instance.GameOver();
         }
         
