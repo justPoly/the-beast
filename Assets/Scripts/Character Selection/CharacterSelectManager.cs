@@ -43,7 +43,7 @@ namespace Michsky.UI.Freebie
             characterBioText.text = "";
             currentType = selectFirstLine;
             currentName = selectSecondLine;
-            characterImage.sprite = selectCharaterIcon;
+            // characterImage.sprite = selectCharaterIcon;
         }
 
         public void UpdateCharacter()

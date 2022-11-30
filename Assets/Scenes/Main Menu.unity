@@ -2689,6 +2689,14 @@ PrefabInstance:
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 836776423}
+    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
+    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 21195289889406082, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
     - target: {fileID: 6248982053812096869, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_Name
       value: LoadingCanvas
@@ -2779,6 +2787,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8810633026244221747, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8901715427504890866, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

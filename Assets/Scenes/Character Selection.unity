@@ -835,7 +835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &252502965
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2626,8 +2626,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3067,7 +3067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -170, y: -38}
+  m_AnchoredPosition: {x: -170, y: -81}
   m_SizeDelta: {x: 0, y: 110}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &819505703
@@ -4642,6 +4642,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
+      propertyPath: previewIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: a1680f54de1a8f6469275d647e4e5a11, type: 3}
+    - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: characterBio
       value: Omen hunts in the shadows. He renders enemies blind, teleports, across
         the field, then lets paranoia take hold as foes scramble to uncover where
@@ -4655,6 +4659,10 @@ PrefabInstance:
       propertyPath: thirdAbility
       value: Third ability description here.
       objectReference: {fileID: 0}
+    - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
+      propertyPath: characterIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: a1680f54de1a8f6469275d647e4e5a11, type: 3}
     - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: characterInfo
       value: Character Info Here. You can add multiple lines and this box will resize
@@ -6165,7 +6173,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f8f6816e1c6e4644d8468905aafabbf8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb2b2874433a73f41adc5cf39f6d7788, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6199,8 +6207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 138.46808}
-  m_SizeDelta: {x: 0, y: -620.1143}
+  m_AnchoredPosition: {x: 0, y: 123.852325}
+  m_SizeDelta: {x: 0, y: -649.3455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1719317076 stripped
 GameObject:
@@ -6222,6 +6230,14 @@ PrefabInstance:
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 479924912}
+    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
+    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6248982053812096869, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_Name
       value: LoadingCanvas
@@ -6854,7 +6870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -80}
+  m_AnchoredPosition: {x: 954, y: -27}
   m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1946386636
@@ -6888,7 +6904,7 @@ MonoBehaviour:
     m_Right: 12
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 3
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
