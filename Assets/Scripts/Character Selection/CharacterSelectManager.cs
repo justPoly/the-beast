@@ -12,7 +12,7 @@ namespace Michsky.UI.Freebie
         public string selectFirstLine;
         public string selectSecondLine;
         public Sprite selectCharaterIcon;
-
+        public int characterID;
         [Header("RESOURCES")]
         public Animator characterWindow;
         public Image characterImage;
@@ -43,7 +43,7 @@ namespace Michsky.UI.Freebie
             characterBioText.text = "";
             currentType = selectFirstLine;
             currentName = selectSecondLine;
-            // characterImage.sprite = selectCharaterIcon;
+            characterImage.sprite = characterImage.sprite;
         }
 
         public void UpdateCharacter()

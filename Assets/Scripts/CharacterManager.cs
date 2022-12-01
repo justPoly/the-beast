@@ -1,50 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
-public class CharacterManager : MonoBehaviour
+[CreateAssetMenu(fileName = "CharacterManager", menuName = "Managers/Character Manager")]
+public class CharacterManager : ScriptableObject
 {
-    public CharacterSO[] characters;
-    public TextMeshProUGUI characterName;
-    public TextMeshProUGUI characterSpeed;
-    public Image characterImage;
-    public int characterIndex =0;
-    // Start is called before the first frame update
-    void Start()
+
+    [FancyHeader(" CHARACTER MANAGER ", 1.5f, "violet", 5.5f, order = 0)]
+
+    public Characters[] gameCharacters;
+    public int currentSelected;
+
+    [Header("Selection Events")]
+    public GameEvent OnBeginSelection;
+    public GameEvent OnSelected;
+
+
+    public void InitializeCharacter()
     {
-        
+        currentSelected = PlayerPrefs.GetInt("selectedCharacter");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        foreach(CharacterSO g in characters)
-        {
-            Debug.Log(g);
-        }
-        
-    }
-    public void NextCharacter()
-    {
-        
-        for(int i = 0; i<=characters.Length; i++)
-        {
-            characterIndex++;
-            if(i>=characters.Length)
-            {
-                characterIndex = 1;
-                characterName.text = characters[characterIndex].nameOfPlayer;
-                characterSpeed.text = characters[characterIndex].speedOfPlayer;
-            }
-            
-            
-        }
-        
-        
 
-        
-        
+    public void SelectCharacter(int id)
+    {
+        PlayerPrefs.SetInt("selectedCharacter", id);
+        currentSelected = id;
     }
 }

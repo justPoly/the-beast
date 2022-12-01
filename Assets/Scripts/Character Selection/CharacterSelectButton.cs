@@ -66,12 +66,19 @@ namespace Michsky.UI.Freebie
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (enableButtonSounds == true && useHoverSound == true)
-                soundSource.PlayOneShot(hoverSound);
+            if (!objectAnimator.GetCurrentAnimatorStateInfo(0).IsName("Pressed to Selected"))
+            {
+                objectAnimator.Play("Pressed to Selected");
+                GameStateManager.CharacterManager.SelectCharacter(characterID);
+                GameStateManager.CharacterManager.OnBeginSelection.Raise();
+                GameStateManager.CharacterManager.OnSelected.Raise();
+            }
+            // if (enableButtonSounds == true && useHoverSound == true)
+            //     soundSource.PlayOneShot(hoverSound);
 
-            if (!objectAnimator.GetCurrentAnimatorStateInfo(0).IsName("Hover to Pressed") &&
-                !objectAnimator.GetCurrentAnimatorStateInfo(0).IsName("Pressed to Selected"))
-                objectAnimator.Play("Normal to Hover");
+            // if (!objectAnimator.GetCurrentAnimatorStateInfo(0).IsName("Hover to Pressed") &&
+            //     !objectAnimator.GetCurrentAnimatorStateInfo(0).IsName("Pressed to Selected"))
+            //     objectAnimator.Play("Normal to Hover");
         }
 
         public void OnPointerExit(PointerEventData eventData)
