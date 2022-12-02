@@ -15,6 +15,7 @@ namespace Michsky.UI.Freebie
         public Sprite characterIcon;
         public string characterName = "Character";
         public string characterType = "Support";
+        public int characterID;
         [TextArea] public string characterInfo = "Character info here.";
         [TextArea] public string firstAbility = "First ability description here.";
         [TextArea] public string secondAbility = "Second ability description here.";

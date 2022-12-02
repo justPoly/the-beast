@@ -20,9 +20,9 @@ public class CharacterManager : ScriptableObject
     }
 
 
-    public void SelectCharacter(int id)
+    public int SelectCharacter(int id)
     {
         PlayerPrefs.SetInt("selectedCharacter", id);
-        currentSelected = id;
+        return currentSelected = id;
     }
 }

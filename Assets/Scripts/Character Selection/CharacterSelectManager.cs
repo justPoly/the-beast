@@ -43,7 +43,14 @@ namespace Michsky.UI.Freebie
             characterBioText.text = "";
             currentType = selectFirstLine;
             currentName = selectSecondLine;
-            characterImage.sprite = characterImage.sprite;
+
+            characterID = GameStateManager.CharacterManager.SelectCharacter(characterID);
+
+            if(characterID == 0)
+            {
+                characterImage.sprite = characterImage.sprite;
+            }
+        
         }
 
         public void UpdateCharacter()
