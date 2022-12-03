@@ -1943,6 +1943,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   canJump: 0
+  target: {fileID: 222033735}
 --- !u!50 &789964018
 Rigidbody2D:
   serializedVersion: 4

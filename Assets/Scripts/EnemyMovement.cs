@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
     private Collider2D Collider;
     public bool canJump;
+    public Transform target;
     // Start is called before the first frame update
     public static EnemyMovement instance;
     private void Awake() {
@@ -21,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         Collider = GetComponent<Collider2D>();
 
     }
@@ -33,7 +34,8 @@ public class EnemyMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed *Time.deltaTime);
+        //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         CheckForObstacles();
         
         
