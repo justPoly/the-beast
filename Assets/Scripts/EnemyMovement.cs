@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed *Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.deltaTime);
         //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         CheckForObstacles();
         
