@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class CoinEvent : MonoBehaviour
+public static class CoinEvent
 {
     public static event Action OnCoinCollected;
     // Start is called before the first frame update
