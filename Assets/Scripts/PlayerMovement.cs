@@ -34,12 +34,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PlayerJump();
     }
     void FixedUpdate()
     {
         PlayerMoveRight();
-        PlayerJump();
+        
         /*
         if(rb.velocity.y <0)
         {
@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void PlayerMoveRight()
     {
-        transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
+        transform.Translate(Vector2.right * Time.deltaTime * speed);
     }
     public void PlayerJump()
     {
