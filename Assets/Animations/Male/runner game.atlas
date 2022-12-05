@@ -1,0 +1,62 @@
+
+runner game.png
+size: 162,482
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 10
+  rotate: false
+  xy: 2, 311
+  size: 98, 169
+  orig: 98, 169
+  offset: 0, 0
+  index: -1
+Layer 11
+  rotate: false
+  xy: 102, 185
+  size: 52, 73
+  orig: 52, 73
+  offset: 0, 0
+  index: -1
+Layer 12
+  rotate: true
+  xy: 2, 2
+  size: 84, 128
+  orig: 84, 128
+  offset: 0, 0
+  index: -1
+Layer 13
+  rotate: false
+  xy: 102, 368
+  size: 58, 112
+  orig: 58, 112
+  offset: 0, 0
+  index: -1
+Layer 13 copy
+  rotate: false
+  xy: 102, 260
+  size: 58, 106
+  orig: 58, 106
+  offset: 0, 0
+  index: -1
+Layer 15
+  rotate: true
+  xy: 2, 88
+  size: 85, 140
+  orig: 85, 140
+  offset: 0, 0
+  index: -1
+Layer 15 copy
+  rotate: true
+  xy: 2, 88
+  size: 85, 140
+  orig: 85, 140
+  offset: 0, 0
+  index: -1
+male copy
+  rotate: false
+  xy: 2, 175
+  size: 98, 134
+  orig: 156, 234
+  offset: 0, 100
+  index: -1
