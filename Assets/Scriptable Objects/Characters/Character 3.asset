@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Character 3
   m_EditorClassIdentifier: 
   charName: Goo
-  charImage: {fileID: 2179711480712036646, guid: fda5f4c4b350ac749a65df5d81f3088c, type: 3}
+  playerPrefab: {fileID: 2179711480712036646, guid: d963bcf60e52fed4e9113731c1bc6ad7, type: 3}

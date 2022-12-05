@@ -6,19 +6,23 @@ public class RoadController : MonoBehaviour
 {
     public Transform[] paths;
     public Vector3 nextPathPosition;
-    public GameObject player;
+    private GameObject player;
     public float pathDrawDistance;
     public float pathDeleteDistance;
     
     // Start is called before the first frame update
     void Start()
     {
+        
+        player = GameStateManager.CharacterManager.gameCharacters[GameStateManager.CharacterManager.currentSelected].playerPrefab;
+        GameObject clone = Instantiate(player, new Vector3(-18, 0, 0), Quaternion.identity);
         LoadParts();
     }
 
     // Update is called once per frame
     void Update()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         RemoveParts();
         LoadParts();
     }

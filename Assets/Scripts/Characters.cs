@@ -8,7 +8,7 @@ public class Characters : ScriptableObject
     public string charName;
     [Space]
     [ShowAssetPreview]
-    public GameObject charImage;
+    public GameObject playerPrefab;
 
     // Start is called before the first frame update
     void Start()

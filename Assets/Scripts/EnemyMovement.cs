@@ -13,16 +13,20 @@ public class EnemyMovement : MonoBehaviour
 
     private Collider2D Collider;
     public bool canJump;
-    public Transform target;
+
+    [SerializeField] 
+    private Transform target;
     // Start is called before the first frame update
     public static EnemyMovement instance;
     private void Awake() {
         instance = this;
     }
+    
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        
         Collider = GetComponent<Collider2D>();
 
     }
@@ -34,6 +38,7 @@ public class EnemyMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.deltaTime);
         //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         CheckForObstacles();
