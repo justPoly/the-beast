@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3b1d026195a0141a2b63797810f6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 8
   isGrounded: 0
   speed: 8
   whatIsGrounded:
