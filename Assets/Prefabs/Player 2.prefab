@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2179711480712036667}
   - component: {fileID: 2179711480712036664}
   - component: {fileID: 2179711480712036665}
+  - component: {fileID: -3920450074598729689}
   m_Layer: 9
   m_Name: Player 2
   m_TagString: Player
@@ -145,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f282d391f8637a44d8fc7b345019025c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
+  jumpForce: 9
   isGrounded: 0
   speed: 8
   groundCheck: {fileID: 0}
@@ -168,3 +169,17 @@ CircleCollider2D:
   m_Offset: {x: 1.0881552, y: -0.086265445}
   serializedVersion: 2
   m_Radius: 0.48381042
+--- !u!114 &-3920450074598729689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179711480712036646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f966ea700bf0cc4bada5094707f8453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 1

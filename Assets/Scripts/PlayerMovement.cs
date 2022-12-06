@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float jumpForce = 40f;
+    public float jumpForce = 45f;
     public bool isGrounded;
     public int speed;
     public Transform groundCheck;
@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         instance = this;
 
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerJump();
     }
+
     void FixedUpdate()
     {
         PlayerMoveRight();
@@ -54,14 +56,14 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = 1f;
         }*/
     }
+
     public void PlayerMoveRight()
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
     }
-    public void PlayerJump()
-    {
 
-        
+    public void PlayerJump()
+    { 
         isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
 
         if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
