@@ -10,10 +10,10 @@ public class PlayerMovement : MonoBehaviour
     public int speed;
     public Transform groundCheck;
 
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 1f;
+
     public LayerMask whatIsGrounded;
-
-    // public GameObject pan;
-
     private Collider2D Collider;
     public static PlayerMovement instance;
 
@@ -42,19 +42,19 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerMoveRight();
         
-        /*
-        if(rb.velocity.y <0)
+        if(rb.velocity.y < 0)
         {
             rb.gravityScale = fallMultiplier;
         }
-        else if(rb.velocity.y >0 && Input.GetButton("Jump"))
+        else if(rb.velocity.y > 0 && !Input.GetMouseButtonDown(0))
         {
             rb.gravityScale = lowJumpMultiplier;
         }
         else
         {
             rb.gravityScale = 1f;
-        }*/
+        }
+
     }
 
     public void PlayerMoveRight()

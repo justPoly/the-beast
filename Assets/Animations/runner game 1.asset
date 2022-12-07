@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: Male Skeleton Data
+  m_Name: runner game 1
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 7925bb337afc7b4459fc1ad915973d82, type: 2}
+  - {fileID: 11400000, guid: e59eec07889f3a341926f90927967167, type: 2}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: ffefdba74923ba04aa6c2c2cea448159, type: 3}
   isUpgradingBlendModeMaterials: 0
@@ -28,4 +28,4 @@ MonoBehaviour:
   toAnimation: []
   duration: []
   defaultMix: 0
-  controller: {fileID: 0}
+  controller: {fileID: 9100000, guid: 5a8dade437705794ba671fcfef8ce458, type: 2}
