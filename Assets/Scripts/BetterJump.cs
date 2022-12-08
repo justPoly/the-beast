@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class BetterJump : MonoBehaviour
 {
-    public float fallMultiplier = 2.5f;
-    public float lowJumpMultiplier = 1f;
+    public float fallMultiplier = 3f;
+    public float lowJumpMultiplier = 2f;
 
     Rigidbody2D rb;
 
@@ -22,11 +22,11 @@ public class BetterJump : MonoBehaviour
     void FixedUpdate()
     {
        
-        if(rb.velocity.y < 0)
+        if(rb.velocity.y < 0 )
         {
             rb.gravityScale = fallMultiplier;
         }
-        else if(rb.velocity.y > 0 && !Input.GetMouseButtonDown(0))
+        if(rb.velocity.y > 0 && !Input.GetMouseButtonDown(0))
         {
             rb.gravityScale = lowJumpMultiplier;
         }

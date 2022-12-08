@@ -10,8 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public int speed;
     public Transform groundCheck;
 
-    public float fallMultiplier = 2.5f;
-    public float lowJumpMultiplier = 1f;
+    public float jumpTime = 0.3f;
+    public float jumpTimeCounter;
+    private bool isJumping;
 
     public LayerMask whatIsGrounded;
     private Collider2D Collider;
@@ -42,18 +43,18 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerMoveRight();
         
-        if(rb.velocity.y < 0)
-        {
-            rb.gravityScale = fallMultiplier;
-        }
-        else if(rb.velocity.y > 0 && !Input.GetMouseButtonDown(0))
-        {
-            rb.gravityScale = lowJumpMultiplier;
-        }
-        else
-        {
-            rb.gravityScale = 1f;
-        }
+        // if(rb.velocity.y < 0)
+        // {
+        //     rb.gravityScale = fallMultiplier;
+        // }
+        // else if(rb.velocity.y > 0 && !Input.GetMouseButtonDown(0))
+        // {
+        //     rb.gravityScale = lowJumpMultiplier;
+        // }
+        // else
+        // {
+        //     rb.gravityScale = 1f;
+        // }
 
     }
 
@@ -69,8 +70,29 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
         {
             isGrounded = false;
+            isJumping = true;
+            jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             
+        }
+
+        if(Input.GetMouseButton(0) && isJumping == true)
+        {
+            if(jumpTimeCounter > 0)
+            {
+             isGrounded = false;
+             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+             jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+
+        if(Input.GetMouseButtonUp(0))
+        {
+            isJumping = false;
         }
     }
     
