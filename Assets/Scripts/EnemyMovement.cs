@@ -16,6 +16,7 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] 
     private Transform target;
+    
     // Start is called before the first frame update
     public static EnemyMovement instance;
     private void Awake() {

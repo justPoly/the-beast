@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask whatIsGrounded;
     private Collider2D Collider;
+    
     public static PlayerMovement instance;
 
     private void Awake()
