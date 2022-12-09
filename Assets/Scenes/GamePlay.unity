@@ -2275,28 +2275,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1528875443, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: sceneName
-      value: Main Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1528875443, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 125553750}
-    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
-    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6248982053812096869, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_Name
       value: LoadingCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6248982053812096869, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8810633026244221747, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_Pivot.x
@@ -2380,10 +2364,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8810633026244221747, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8901715427504890866, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3323,6 +3303,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c24b1f313088844982a640d005bed3c, type: 3}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 532e417ffa3f95747908419a00be3780, type: 3}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Hard Fall
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].mixer
+      value: 
+      objectReference: {fileID: 6166479599480109436, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].mixer
+      value: 
+      objectReference: {fileID: 6166479599480109436, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 957259959642743731, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
       propertyPath: m_Name
       value: AudioManager

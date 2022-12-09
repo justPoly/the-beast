@@ -6,8 +6,11 @@ public class SceneToLoad : MonoBehaviour
     public string sceneName;
     public int countDownTime;
     public SceneFader sceneFader;
+    
     public void MoveToLoading()
     {
+        PlayerMovement.instance.speed = 0;
+        EnemyMovement.instance.speed = 0;
         GameStateManager.ApplicationManager.PlayGame();
         GameStateManager.ApplicationManager.OnSceneLoad.Raise();
         StartCoroutine(CountDown());

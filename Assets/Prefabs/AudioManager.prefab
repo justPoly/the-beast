@@ -51,4 +51,11 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 51f0c54706b53c14c9c24bbd63bb18a6, type: 3}
+    mixer: {fileID: 6166479599480109436, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   soundSO: []

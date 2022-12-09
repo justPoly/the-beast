@@ -10,6 +10,7 @@ public static class CoinEvent
     public static void EventEvoked()
     {
         OnCoinCollected?.Invoke();
+        AudioManager.instance.PlayOneShot("Coin");
     }
 
     

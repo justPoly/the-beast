@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [FancyHeader("PLAYER MOVEMENT", 3f, "#D4AF37", 8.5f, order = 0)]
+    [Space]
+
+    [Header("Moving")]
     private Rigidbody2D rb;
-    public float jumpForce = 45f;
     public bool isGrounded;
     public int speed;
     public Transform groundCheck;
-
+    public LayerMask whatIsGrounded;
+    private Collider2D Collider;
+    
+    [Header("Jumping")]
+    public float jumpForce = 45f;
     public float jumpTime = 0.3f;
     public float jumpTimeCounter;
     private bool isJumping;
+    
+    [Header("Animation")]
+    private Animator animator;
 
-    public LayerMask whatIsGrounded;
-    private Collider2D Collider;
+  
     
     public static PlayerMovement instance;
 
@@ -28,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
         Collider = GetComponent<Collider2D>();
@@ -70,11 +80,16 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
         {
+            AudioManager.instance.PlayOneShot("Jump");
+            animator.SetBool("Jumping", true);
             isGrounded = false;
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             
+        } else
+        {
+            animator.SetBool("Jumping", false);
         }
 
         if(Input.GetMouseButton(0) && isJumping == true)
@@ -103,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            AudioManager.instance.PlayOneShot("Hard Fall");
         }
         if(collision.gameObject.CompareTag("Obstacle"))
         {
