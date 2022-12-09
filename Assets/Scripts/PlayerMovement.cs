@@ -126,8 +126,12 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             jumpForce = 0;
-            
+            animator.SetBool("Death", true);
             GameManager.instance.GameOver();
+        }
+        else
+        {
+            // animator.SetBool("Death", false);
         }
         
     }
