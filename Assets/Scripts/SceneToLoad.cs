@@ -9,6 +9,8 @@ public class SceneToLoad : MonoBehaviour
     
     public void MoveToLoading()
     {
+        PlayerMovement.instance.speed = 0;
+        EnemyMovement.instance.speed = 0;
         GameStateManager.ApplicationManager.PlayGame();
         GameStateManager.ApplicationManager.OnSceneLoad.Raise();
         StartCoroutine(CountDown());
