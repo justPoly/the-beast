@@ -96,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(jumpTimeCounter > 0)
             {
+             animator.SetBool("Jumping", true);
              isGrounded = false;
              rb.velocity = new Vector2(rb.velocity.x, jumpForce);
              jumpTimeCounter -= Time.deltaTime;
@@ -103,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 isJumping = false;
+                animator.SetBool("Jumping", false);
             }
         }
 
