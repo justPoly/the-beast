@@ -6,6 +6,7 @@ public class SceneToLoad : MonoBehaviour
     public string sceneName;
     public int countDownTime;
     public SceneFader sceneFader;
+    
     public void MoveToLoading()
     {
         GameStateManager.ApplicationManager.PlayGame();

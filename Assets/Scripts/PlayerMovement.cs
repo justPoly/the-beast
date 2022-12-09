@@ -70,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
         {
+            AudioManager.instance.PlayOneShot("Jump");
             isGrounded = false;
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -103,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            AudioManager.instance.PlayOneShot("Hard Fall");
         }
         if(collision.gameObject.CompareTag("Obstacle"))
         {
