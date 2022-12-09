@@ -13,21 +13,25 @@ public class GameManager : MonoBehaviour
 
     [Header("GameEvent")]
     public GameEvent OnGameEnded;
+  
     public GameObject GameOverPanel;
     public int highScore;
     public bool isGameOver;
+    public bool StartGame;
 
     public static GameManager instance;
 
     private void Awake()
     {
         instance = this;
+        isGameOver = false;
+
 
     }
     void Start()
     {
-        isGameOver = false;
         highScore =PlayerPrefs.GetInt("HighScore", score);
+
     }
 
     void Update ()
@@ -72,6 +76,7 @@ public class GameManager : MonoBehaviour
         
 
     }
+    
 
 
 }
