@@ -16,6 +16,7 @@ public class TutorialManager : MonoBehaviour
 
     public int currentIndex;
     public GameObject tutuorialPanel;
+    public bool canJump;
     
 
     public static TutorialManager instance;
@@ -32,9 +33,8 @@ public class TutorialManager : MonoBehaviour
 
             //Set first time opening to false
             PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
-          
-
             tutuorialPanel.SetActive(true);
+            
 
         }
         else
@@ -43,7 +43,7 @@ public class TutorialManager : MonoBehaviour
 
             tutuorialPanel.SetActive(false);
         }
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
                 
     }
 
@@ -51,14 +51,8 @@ public class TutorialManager : MonoBehaviour
     {
         
         //tutorialText.GetComponent<RectTransform>().localScale = Vector3.zero;
-        if(SceneFader.instance.isSceneFaded != true)
-        {    
-            Invoke("UIUpdate", 1.2f);
-            
-            Invoke("Tween", 1.2f);
-
-            
-        }
+        InvokeUI();
+        
         
         //nextButton.GetComponent<RectTransform>().localScale = Vector3.zero;
         
@@ -69,9 +63,25 @@ public class TutorialManager : MonoBehaviour
     {
         
     }
+    public void InvokeUI()
+    {
+        canJump = false;
+        if(SceneFader.instance.isSceneFaded == true)
+        {    
+
+            Invoke("UIUpdate", 1.2f);
+            
+            Invoke("Tween", 1.2f);
+            
+
+            
+        }
+    }
     public void UIUpdate()
     {
+        tutorialText.gameObject.SetActive(true);
         tutorialText.text = tutorials.tutorial_Instructions[currentIndex].ToString();
+        canJump = true;
     }
     public void DisableUI()
     {
@@ -83,6 +93,7 @@ public class TutorialManager : MonoBehaviour
         LeanTween.cancel(hand);
         transform.localScale = Vector3.one;
         LeanTween.scale(hand, Vector3.one * 2, 2f).setEasePunch();
+        canJump = true;
     }
 
 

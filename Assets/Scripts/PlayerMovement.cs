@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
     { 
         isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
 
-        if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
+        if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false&&TutorialManager.instance.canJump == true)
         {
             if(TutorialManager.instance.tutuorialPanel.activeSelf)
             {

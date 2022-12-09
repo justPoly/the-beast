@@ -15,13 +15,13 @@ public class SceneFader : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        
+        isSceneFaded = false;
 
     }
     void Start()
     {
         StartCoroutine(FadeIn());
-        isSceneFaded = false;
+        
     }
 
     public void FadeTo(string scene)
@@ -57,6 +57,7 @@ public class SceneFader : MonoBehaviour
             t += Time.deltaTime;
             float a = curve.Evaluate(t);
             img.color = new Color(0f, 0f, 0f, a);
+            isSceneFaded = true;
             yield return 0;
 
         }
