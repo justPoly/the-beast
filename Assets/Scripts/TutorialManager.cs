@@ -10,17 +10,19 @@ public class TutorialManager : MonoBehaviour
     public TextMeshProUGUI tutorialText;
     public TextMeshProUGUI Text;
     public TextMeshProUGUI buttonText;
-    //public GameObject hand;
+    public GameObject hand;
     public GameObject nextButton;
     public GameObject prevButton;
 
     public int currentIndex;
     public GameObject tutuorialPanel;
+    
 
-    // Start is called before the first frame update
+    public static TutorialManager instance;
 
     private void Awake()
     {
+        instance = this;
         //PlayerPrefs.SetInt("FirstTime", 0);
         
 
@@ -41,17 +43,25 @@ public class TutorialManager : MonoBehaviour
 
             tutuorialPanel.SetActive(false);
         }
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
                 
     }
 
     void Start()
     {
-        //LeanTween.moveLocal(gameObject.transform.GetChild(1).gameObject, Vector3.zero, 1.5f).setEase(LeanTweenType.easeInOutBack);
-        currentIndex = -1;
+        
         //tutorialText.GetComponent<RectTransform>().localScale = Vector3.zero;
-        Invoke("ChangeNext", 1.6f);
+        if(SceneFader.instance.isSceneFaded != true)
+        {    
+            Invoke("UIUpdate", 1.2f);
+            
+            Invoke("Tween", 1.2f);
+
+            
+        }
+        
         //nextButton.GetComponent<RectTransform>().localScale = Vector3.zero;
+        
     }
 
     // Update is called once per frame
@@ -59,6 +69,27 @@ public class TutorialManager : MonoBehaviour
     {
         
     }
+    public void UIUpdate()
+    {
+        tutorialText.text = tutorials.tutorial_Instructions[currentIndex].ToString();
+    }
+    public void DisableUI()
+    {
+        tutuorialPanel.SetActive(false);
+    }
+    public void Tween()
+    {
+        hand.SetActive(true);
+        LeanTween.cancel(hand);
+        transform.localScale = Vector3.one;
+        LeanTween.scale(hand, Vector3.one * 2, 2f).setEasePunch();
+    }
+
+
+
+
+
+    
     public void ChangeNext()
     {
         /*for(int i = 0; i<=tutorials.tutorial_Instructions.Length; i++)

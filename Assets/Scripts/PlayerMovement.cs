@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpTime = 0.3f;
     public float jumpTimeCounter;
     private bool isJumping;
+    public bool canJump;
     
     [Header("Animation")]
     private Animator animator;
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerMoveRight();
         
+        
         // if(rb.velocity.y < 0)
         // {
         //     rb.gravityScale = fallMultiplier;
@@ -72,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
     public void PlayerMoveRight()
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
+        
     }
 
     public void PlayerJump()
@@ -80,6 +83,10 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
         {
+            if(TutorialManager.instance.tutuorialPanel.activeSelf)
+            {
+                TutorialManager.instance.DisableUI();
+            }
             AudioManager.instance.PlayOneShot("Jump");
             animator.SetBool("Jumping", true);
             isGrounded = false;

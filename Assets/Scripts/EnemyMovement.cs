@@ -53,7 +53,7 @@ public class EnemyMovement : MonoBehaviour
 
         if(hit.collider != null)
         {
-            Debug.Log(hit.collider.tag);
+            
             if(hit.collider.tag == "Obstacle")
             {
                 canJump = true;
@@ -67,18 +67,7 @@ public class EnemyMovement : MonoBehaviour
                     
                 }
             }
-            if(hit.collider.tag == "LongObstacle")
-            {
-                canJump = true;
-                Debug.Log(hit.collider.tag);
-                if(isGrounded == true && canJump == true)
-                {
-                    canJump = false;
-                    isGrounded = false;
-                    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                    
-                }
-            }
+            
             
 
             //if(hit.collider.gameObject.name)

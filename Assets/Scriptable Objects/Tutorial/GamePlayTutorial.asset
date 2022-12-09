@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: GamePlayTutorial
   m_EditorClassIdentifier: 
   tutorial_Instructions:
-  - Run, run, run
   - Tap on the screen to jump over obstacles
-  - Don't let The Beast catch you
-  - Hurry
+  - Don't let The Beast catch you. Huury!

@@ -8,11 +8,20 @@ public class SceneFader : MonoBehaviour
 
     public Image img;
     public AnimationCurve curve;
+    public  bool isSceneFaded;
 
+    public static SceneFader instance;
 
+    private void Awake()
+    {
+        instance = this;
+        
+
+    }
     void Start()
     {
         StartCoroutine(FadeIn());
+        isSceneFaded = false;
     }
 
     public void FadeTo(string scene)
@@ -33,6 +42,7 @@ public class SceneFader : MonoBehaviour
             t -= Time.deltaTime;
             float a = curve.Evaluate(t);
             img.color = new Color(0f, 0f, 0f, a);
+            isSceneFaded = true;
             yield return 0;
 
         }
