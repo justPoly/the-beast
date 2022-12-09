@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2624,6 +2624,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c24b1f313088844982a640d005bed3c, type: 3}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 532e417ffa3f95747908419a00be3780, type: 3}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Hard Fall
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].mixer
+      value: 
+      objectReference: {fileID: 6166479599480109436, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].mixer
+      value: 
+      objectReference: {fileID: 6166479599480109436, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 957259959642743731, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
       propertyPath: m_Name
       value: AudioManager
