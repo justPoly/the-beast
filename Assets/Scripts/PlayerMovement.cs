@@ -128,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
             AudioManager.instance.PlayOneShot("Hard Fall");
+            // AudioManager.instance.PlayOneShot("Foot Step");
         }
         if(collision.gameObject.CompareTag("Obstacle"))
         {
