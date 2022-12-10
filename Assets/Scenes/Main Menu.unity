@@ -2726,28 +2726,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1528875443, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: sceneName
-      value: Character Selection
-      objectReference: {fileID: 0}
-    - target: {fileID: 1528875443, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 836776423}
-    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
-    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 21195289889406082, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
     - target: {fileID: 6248982053812096869, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_Name
       value: LoadingCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8067280097920315389, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8810633026244221747, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_Pivot.x
@@ -2831,10 +2815,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8810633026244221747, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8901715427504890866, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

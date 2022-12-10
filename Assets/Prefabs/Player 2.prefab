@@ -156,6 +156,7 @@ MonoBehaviour:
   jumpForce: 6
   jumpTime: 0.35
   jumpTimeCounter: 0
+  canJump: 0
 --- !u!58 &2179711480712036665
 CircleCollider2D:
   m_ObjectHideFlags: 0

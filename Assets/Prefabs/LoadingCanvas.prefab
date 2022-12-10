@@ -60,7 +60,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &7731736803150069489
 MonoBehaviour:
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7c829cfbb189a4a8880e6005baaa59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Main Menu
+  sceneName: Character Selection
   countDownTime: 2
   sceneFader: {fileID: 0}
 --- !u!1 &8645344964025477066
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_text: <rainb>Loading..
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 21195289889406082, guid: a1eee1facb61ac74096140ff3c047bd0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -397,8 +397,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1400}
+  m_AnchoredPosition: {x: 0, y: 0.0085068}
+  m_SizeDelta: {x: 1920, y: 934.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1645933874125356472
 CanvasRenderer:
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3fb580970ae8c48e7befdc608b11eacc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5b40d15dda10ef4985dbf065e1d36af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
