@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7212043398647707903}
   - component: {fileID: 8924688602459149887}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,6 +45,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -90,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858403485913688210}
   - component: {fileID: 925769034280347402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate_01-Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1393754760411032020}
   - component: {fileID: 41589456305108252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_4_Thigh-Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,6 +184,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -227,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1393167488412493299}
   - component: {fileID: 2043851713520855370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_0_Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,6 +266,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -307,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7577282688881537673}
   - component: {fileID: 6418706775948993080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_8_Coat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,6 +348,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -387,7 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023504357679278630}
   - component: {fileID: 5904833357853123332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_7_ArmBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,6 +431,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -468,7 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7644520269881248350}
   - component: {fileID: 1677335182133994701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_5_Thigh-Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,6 +514,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -549,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2668016171673300673}
   - component: {fileID: 5878647655243356978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_3_Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,6 +596,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -629,7 +643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1779279993504624758}
   - component: {fileID: 6878136707968589058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_6_ArmFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,6 +679,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -710,7 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7478710605961108820}
   - component: {fileID: 4947601120186324463}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_10_Foot-Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,6 +761,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -790,7 +808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9038011225300162352}
   - component: {fileID: 2239160736798233843}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_11_HandFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,6 +845,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -871,9 +891,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8015910331062749276}
-  m_Layer: 0
+  - component: {fileID: 154374972}
+  - component: {fileID: 154374970}
+  - component: {fileID: 154374973}
+  - component: {fileID: 154374969}
+  - component: {fileID: 154374971}
+  m_Layer: 9
   m_Name: Pirate_01
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -887,12 +912,137 @@ Transform:
   m_GameObject: {fileID: 5481701035122274872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -88.08, y: 5.9, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 1858403485913688210}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &154374972
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481701035122274872}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 2
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &154374970
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481701035122274872}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.0881552, y: 0.53}
+  serializedVersion: 2
+  m_Radius: 0.48381042
+--- !u!60 &154374973
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481701035122274872}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.57240486, y: 0.4632781}
+      - {x: 0.72366714, y: 0.9273447}
+      - {x: 0.67570686, y: 2.5482101}
+      - {x: 0.5178642, y: 3.2337797}
+      - {x: 0.55500984, y: 3.2517428}
+      - {x: 0.53738594, y: 3.596228}
+      - {x: 0.7058811, y: 4.0030065}
+      - {x: 0.7420349, y: 5.720817}
+      - {x: 0.4140854, y: 6.2174234}
+      - {x: 0.33942223, y: 5.654465}
+      - {x: 0.0033950806, y: 6.2217703}
+      - {x: -0.3535366, y: 5.692838}
+      - {x: -1.086359, y: 5.44229}
+      - {x: -1.077261, y: 5.2863293}
+      - {x: -1.5772057, y: 5.6302743}
+      - {x: -2.0228863, y: 5.527089}
+      - {x: -2.2379684, y: 5.29332}
+      - {x: -2.3732662, y: 4.8176146}
+      - {x: -2.2369194, y: 4.4387403}
+      - {x: -1.9728279, y: 3.849513}
+      - {x: -1.3513756, y: 1.6093682}
+      - {x: -0.8156348, y: 0.8235806}
+      - {x: -0.69182396, y: -0.06231892}
+      - {x: -0.49517387, y: -0.07240349}
+      - {x: -0.48261642, y: -0.023657858}
+      - {x: 0.64195406, y: -0.038287103}
+      - {x: 0.761466, y: 0.09235871}
+--- !u!114 &154374969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481701035122274872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f966ea700bf0cc4bada5094707f8453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 3
+  lowJumpMultiplier: 2
+--- !u!114 &154374971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481701035122274872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f282d391f8637a44d8fc7b345019025c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrounded: 0
+  speed: 0
+  groundCheck: {fileID: 0}
+  whatIsGrounded:
+    serializedVersion: 2
+    m_Bits: 256
+  jumpForce: 6
+  jumpTime: 0.35
+  jumpTimeCounter: 0
+  canJump: 0
 --- !u!1 &5650626339861270311
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +1053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6909602240351196948}
   - component: {fileID: 1542763771692963396}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_9_Foot-Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,6 +1088,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -983,7 +1135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5138243774696988035}
   - component: {fileID: 1180807479865452517}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_1_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,6 +1173,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1066,7 +1220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9112099004158140237}
   - component: {fileID: 2763949136613133507}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_12_HandBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1101,6 +1255,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1146,7 +1302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 120709574800374629}
   - component: {fileID: 7881526530393297041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pistol_Poof_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,6 +1337,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1226,7 +1384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3989241860842565056}
   - component: {fileID: 9160527089596711626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_2_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,6 +1423,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1310,7 +1470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5691719832141836318}
   - component: {fileID: 6458609772451030360}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pistol_Poof_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1345,6 +1505,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1390,7 +1552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570914981912428978}
   - component: {fileID: 1537796256770439904}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,6 +1587,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1470,7 +1634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8690232766879822585}
   - component: {fileID: 2835027488488464113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pistol_Poof_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,6 +1669,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1550,7 +1716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2371087041206053692}
   - component: {fileID: 2704262474683540069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pirate 01 - sheet_15_Face-Hurt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1585,6 +1751,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
