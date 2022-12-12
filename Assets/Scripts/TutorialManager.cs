@@ -43,7 +43,7 @@ public class TutorialManager : MonoBehaviour
 
             tutuorialPanel.SetActive(false);
         }
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
                 
     }
 
