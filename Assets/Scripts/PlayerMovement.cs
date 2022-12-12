@@ -81,12 +81,9 @@ public class PlayerMovement : MonoBehaviour
     { 
         isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
 
-        if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false&&TutorialManager.instance.canJump == true)
+        if(Input.GetMouseButtonDown(0) && isGrounded == true && GameManager.instance.isGameOver == false)
         {
-            if(TutorialManager.instance.tutuorialPanel.activeSelf)
-            {
-                TutorialManager.instance.DisableUI();
-            }
+            
             AudioManager.instance.PlayOneShot("Jump");
             animator.SetBool("Jumping", true);
             isGrounded = false;

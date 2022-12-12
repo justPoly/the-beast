@@ -43,7 +43,7 @@ public class TutorialManager : MonoBehaviour
 
             tutuorialPanel.SetActive(false);
         }
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
                 
     }
 
@@ -52,6 +52,7 @@ public class TutorialManager : MonoBehaviour
         
         //tutorialText.GetComponent<RectTransform>().localScale = Vector3.zero;
         InvokeUI();
+        Invoke("DisableUI", 4f);
         
         
         //nextButton.GetComponent<RectTransform>().localScale = Vector3.zero;
