@@ -27,11 +27,21 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
 
 
+
     }
     void Start()
     {
         highScore =PlayerPrefs.GetInt("HighScore", score);
 
+        int amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING", 0);
+        if(amtOfGameplays == 0)
+        {
+            PlayerPrefs.SetInt("FIRSTTIMEOPENING", 1);
+        }
+        
+
+        
+        
     }
 
     void Update ()

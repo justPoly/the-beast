@@ -26,33 +26,16 @@ public class TutorialManager : MonoBehaviour
         instance = this;
         //PlayerPrefs.SetInt("FirstTime", 0);
         
-
-        if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
-        {
-            Debug.Log("First Time Opening");
-
-            //Set first time opening to false
-            PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
-            tutuorialPanel.SetActive(true);
-            
-
-        }
-        else
-        {
-            Debug.Log("NOT First Time Opening");
-
-            tutuorialPanel.SetActive(false);
-        }
-        //PlayerPrefs.DeleteAll();
-                
+                        
     }
 
     void Start()
     {
+
         
-        //tutorialText.GetComponent<RectTransform>().localScale = Vector3.zero;
-        InvokeUI();
-        Invoke("DisableUI", 4f);
+        
+
+        
         
         
         //nextButton.GetComponent<RectTransform>().localScale = Vector3.zero;
@@ -62,7 +45,36 @@ public class TutorialManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        int amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING");
         
+        //tutorialText.GetComponent<RectTransform>().localScale = Vector3.zero;
+        Debug.Log("amtOfGameplays check am ooooo" + amtOfGameplays);
+        if(amtOfGameplays == 0)
+        {
+            if(SceneFader.instance.isSceneFaded == true)
+            {
+                //Debug.Log("amtOfGameplays check am ooooo" + amtOfGameplays);
+                SceneFader.instance.isSceneFaded = false;
+                tutuorialPanel.SetActive(true);
+                UIUpdate();
+                Tween();
+                Invoke("DisableUI", 4f);
+
+
+            }
+            if(GameManager.instance.isGameOver == true)
+            {
+                tutuorialPanel.SetActive(false);
+            }
+            
+            
+        } 
+        else
+        {
+                tutuorialPanel.SetActive(false);
+        } 
+
     }
     public void InvokeUI()
     {
@@ -78,11 +90,14 @@ public class TutorialManager : MonoBehaviour
             
         }
     }
+    public void ResetGame()
+    {
+        PlayerPrefs.DeleteAll();
+    }
     public void UIUpdate()
     {
-        tutorialText.gameObject.SetActive(true);
         tutorialText.text = tutorials.tutorial_Instructions[currentIndex].ToString();
-        canJump = true;
+        
     }
     public void DisableUI()
     {
@@ -90,7 +105,7 @@ public class TutorialManager : MonoBehaviour
     }
     public void Tween()
     {
-        hand.SetActive(true);
+        
         LeanTween.cancel(hand);
         transform.localScale = Vector3.one;
         LeanTween.scale(hand, Vector3.one * 2, 2f).setEasePunch();
