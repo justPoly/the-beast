@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         {
             
             AudioManager.instance.PlayOneShot("Jump");
-            // animator.SetBool("Jumping", true);
+            animator.SetBool("Jumping", true);
             isGrounded = false;
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -93,14 +93,14 @@ public class PlayerMovement : MonoBehaviour
             
         } else
         {
-            // animator.SetBool("Jumping", false);
+            animator.SetBool("Jumping", false);
         }
 
         if(Input.GetMouseButton(0) && isJumping == true)
         {
             if(jumpTimeCounter > 0)
             {
-            //  animator.SetBool("Jumping", true);
+             animator.SetBool("Jumping", true);
              isGrounded = false;
              rb.velocity = new Vector2(rb.velocity.x, jumpForce);
              jumpTimeCounter -= Time.deltaTime;
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 isJumping = false;
-                // animator.SetBool("Jumping", false);
+                animator.SetBool("Jumping", false);
             }
         }
 
