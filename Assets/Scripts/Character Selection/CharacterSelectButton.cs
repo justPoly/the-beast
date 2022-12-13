@@ -20,6 +20,7 @@ namespace Michsky.UI.Freebie
         [TextArea] public string firstAbility = "First ability description here.";
         [TextArea] public string secondAbility = "Second ability description here.";
         [TextArea] public string thirdAbility = "Third ability description here.";
+        public int characterAmount;
 
         [Header("SOUND")]
         public bool enableButtonSounds = false;
