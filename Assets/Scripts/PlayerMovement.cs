@@ -42,7 +42,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         Collider = GetComponent<Collider2D>();
-
+        // AudioManager.instance.Play("GamePlay");
+        // AudioManager.instance.PauseSound("Background");
     }
 
     // Update is called once per frame

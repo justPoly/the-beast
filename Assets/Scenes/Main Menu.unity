@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2626,8 +2626,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
       propertyPath: sounds.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 17dbf1adecf95f44b853549d2327a5d6, type: 3}
     - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
       propertyPath: sounds.Array.data[2].clip
       value: 
@@ -2645,6 +2649,18 @@ PrefabInstance:
       value: Hard Fall
       objectReference: {fileID: 0}
     - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 07331ce1d4512cf418a898fb2aedac20, type: 3}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[4].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: GamePlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
       propertyPath: sounds.Array.data[2].mixer
       value: 
       objectReference: {fileID: 6166479599480109436, guid: 640dfab58cad5444690465d11619f403, type: 2}
@@ -2660,6 +2676,10 @@ PrefabInstance:
       propertyPath: sounds.Array.data[3].pitch
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
+      propertyPath: sounds.Array.data[4].mixer
+      value: 
+      objectReference: {fileID: 7894159483494268369, guid: 640dfab58cad5444690465d11619f403, type: 2}
     - target: {fileID: 957259959642743730, guid: 9f0763421441d304fa3acc4e3425626e, type: 3}
       propertyPath: sounds.Array.data[2].volume
       value: 1
