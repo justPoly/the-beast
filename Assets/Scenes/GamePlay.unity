@@ -2458,6 +2458,7 @@ MonoBehaviour:
   - {fileID: 5871933531175951131, guid: b565cc30435d4e2448e9d2241c0c05d0, type: 3}
   - {fileID: 5871933531175951131, guid: 680eb42d6eb9dec45a9d6f16fb906703, type: 3}
   - {fileID: 4210903946298817804, guid: b1ab93af78b74da4894a3ceecfee7455, type: 3}
+  - {fileID: 1041425046015247553, guid: 9d8b7b30a60dd544aab0ccfcb61a9eab, type: 3}
   nextPathPosition: {x: 0, y: 0, z: 0}
   pathDrawDistance: 80
   pathDeleteDistance: 40
