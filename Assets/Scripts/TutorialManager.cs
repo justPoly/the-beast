@@ -17,6 +17,7 @@ public class TutorialManager : MonoBehaviour
     public int currentIndex;
     public GameObject tutuorialPanel;
     public bool canJump;
+    public int amtOfGameplays;
     
 
     public static TutorialManager instance;
@@ -31,9 +32,9 @@ public class TutorialManager : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        
         tutorialText.text = tutorials.tutorial_Instructions[0].ToString();
-        int amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING");
+        amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING",amtOfGameplays);
         Debug.Log("tutorials.tutorial_Instructions.Length " + tutorials.tutorial_Instructions.Length);
         if(amtOfGameplays == 0)
         {
