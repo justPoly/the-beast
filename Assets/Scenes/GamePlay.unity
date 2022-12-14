@@ -853,6 +853,7 @@ MonoBehaviour:
   highScore: 0
   isGameOver: 0
   StartGame: 0
+  amtOfGameplays: 0
 --- !u!4 &315008375
 Transform:
   m_ObjectHideFlags: 0
@@ -2885,6 +2886,7 @@ MonoBehaviour:
   currentIndex: 0
   tutuorialPanel: {fileID: 1719440417}
   canJump: 0
+  amtOfGameplays: 0
 --- !u!4 &1216163048
 Transform:
   m_ObjectHideFlags: 0

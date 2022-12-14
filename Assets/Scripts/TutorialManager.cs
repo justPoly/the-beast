@@ -26,7 +26,6 @@ public class TutorialManager : MonoBehaviour
     {
         instance = this;
         //PlayerPrefs.SetInt("FirstTime", 0);
-        
                         
     }
 
