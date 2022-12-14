@@ -31,7 +31,7 @@ public class TutorialManager : MonoBehaviour
 
     void Start()
     {
-        
+        PlayerPrefs.DeleteAll();
         tutorialText.text = tutorials.tutorial_Instructions[0].ToString();
         int amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING");
         Debug.Log("tutorials.tutorial_Instructions.Length " + tutorials.tutorial_Instructions.Length);
