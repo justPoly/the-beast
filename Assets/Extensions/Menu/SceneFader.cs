@@ -20,7 +20,7 @@ public class SceneFader : MonoBehaviour
     }
     void Start()
     {
-        isSceneFaded = false;
+        
         Debug.Log(isSceneFaded);
         StartCoroutine(FadeIn());
         
@@ -37,15 +37,16 @@ public class SceneFader : MonoBehaviour
 
     IEnumerator FadeIn()
     {
+        
+        
         float t = 1f;
-        isSceneFaded = true;
-        Debug.Log("isSceneFaded " + isSceneFaded);
+        
         while (t > 0f)
         {
             t -= Time.deltaTime;
             float a = curve.Evaluate(t);
             img.color = new Color(0f, 0f, 0f, a);
-            
+            isSceneFaded = false;
             yield return 0;
 
         }
@@ -53,6 +54,7 @@ public class SceneFader : MonoBehaviour
 
     IEnumerator FadeOut(string scene)
     {
+        isSceneFaded = true;
         float t = 0f;
 
         while (t < 1f)
@@ -61,6 +63,7 @@ public class SceneFader : MonoBehaviour
             float a = curve.Evaluate(t);
             img.color = new Color(0f, 0f, 0f, a);
             isSceneFaded = true;
+            isSceneFaded = false;
             yield return 0;
 
         }

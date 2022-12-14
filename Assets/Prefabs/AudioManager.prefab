@@ -45,9 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Background
-    clip: {fileID: 8300000, guid: 17dbf1adecf95f44b853549d2327a5d6, type: 3}
+    clip: {fileID: 8300000, guid: 10593bb51b37bea49bf1e36c87cfe753, type: 3}
     mixer: {fileID: 7894159483494268369, guid: 640dfab58cad5444690465d11619f403, type: 2}
-    volume: 0.55
+    volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -71,5 +71,19 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: Foot Step
+    clip: {fileID: 8300000, guid: e885484e1bc99fb47a0ac3f6bfa586b1, type: 3}
+    mixer: {fileID: 6166479599480109436, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GamePlay
+    clip: {fileID: 8300000, guid: 07331ce1d4512cf418a898fb2aedac20, type: 3}
+    mixer: {fileID: 7894159483494268369, guid: 640dfab58cad5444690465d11619f403, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
   soundSO: []

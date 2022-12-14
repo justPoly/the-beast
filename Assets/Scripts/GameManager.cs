@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     void Update ()
     {
-        if(isGameOver == false)
+        if(isGameOver == false )
         {
             
             distance += Time.deltaTime;

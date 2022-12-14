@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: GamePlayTutorial
   m_EditorClassIdentifier: 
   tutorial_Instructions:
+  - Hi
   - Tap on the screen to jump over obstacles
-  - Don't let The Beast catch you. Huury!
+  - Long press on the screen to jump higher
+  - Hurry

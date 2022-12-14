@@ -12,7 +12,7 @@ public class TutorialManager : MonoBehaviour
     public TextMeshProUGUI buttonText;
     public GameObject hand;
     public GameObject nextButton;
-    public GameObject prevButton;
+    public GameObject contButton;
 
     public int currentIndex;
     public GameObject tutuorialPanel;
@@ -31,6 +31,29 @@ public class TutorialManager : MonoBehaviour
 
     void Start()
     {
+        
+        tutorialText.text = tutorials.tutorial_Instructions[0].ToString();
+        int amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING");
+        Debug.Log("tutorials.tutorial_Instructions.Length " + tutorials.tutorial_Instructions.Length);
+        if(amtOfGameplays == 0)
+        {
+            
+            Invoke("InvokeUI", 1.5f);
+
+
+
+            
+            if(GameManager.instance.isGameOver == true)
+            {
+                tutuorialPanel.SetActive(false);
+            }
+            
+            
+        } 
+        else
+        {
+                tutuorialPanel.SetActive(false);
+        } 
 
         
         
@@ -46,49 +69,16 @@ public class TutorialManager : MonoBehaviour
     void Update()
     {
 
-        int amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING");
         
+         
         //tutorialText.GetComponent<RectTransform>().localScale = Vector3.zero;
-        Debug.Log("amtOfGameplays check am ooooo" + amtOfGameplays);
-        if(amtOfGameplays == 0)
-        {
-            if(SceneFader.instance.isSceneFaded == true)
-            {
-                //Debug.Log("amtOfGameplays check am ooooo" + amtOfGameplays);
-                SceneFader.instance.isSceneFaded = false;
-                tutuorialPanel.SetActive(true);
-                UIUpdate();
-                Tween();
-                Invoke("DisableUI", 4f);
-
-
-            }
-            if(GameManager.instance.isGameOver == true)
-            {
-                tutuorialPanel.SetActive(false);
-            }
-            
-            
-        } 
-        else
-        {
-                tutuorialPanel.SetActive(false);
-        } 
-
+        //Debug.Log("amtOfGameplays check am ooooo" + amtOfGameplays);
+        
     }
     public void InvokeUI()
     {
-        canJump = false;
-        if(SceneFader.instance.isSceneFaded == true)
-        {    
-
-            Invoke("UIUpdate", 1.2f);
-            
-            Invoke("Tween", 1.2f);
-            
-
-            
-        }
+        tutuorialPanel.SetActive(true);
+        Time.timeScale = 0;
     }
     public void ResetGame()
     {
@@ -102,6 +92,7 @@ public class TutorialManager : MonoBehaviour
     public void DisableUI()
     {
         tutuorialPanel.SetActive(false);
+        Time.timeScale = 1;
     }
     public void Tween()
     {
@@ -123,26 +114,21 @@ public class TutorialManager : MonoBehaviour
         {*/
 
         currentIndex++;
+   
+        
+        if (currentIndex >= tutorials.tutorial_Instructions.Length)
+        {
+            currentIndex = 4;
+            contButton.SetActive(true);
+            nextButton.SetActive(false);
             
-            
-            if (currentIndex == tutorials.tutorial_Instructions.Length)
-            {
-                //GameManager.instance.EndTutorial();
-                tutuorialPanel.SetActive(false);
-            }
-            if (currentIndex == tutorials.tutorial_Instructions.Length - 1)
-            {
-                currentIndex = 3;
-                Text.text = "Continue";
 
-
-                prevButton.SetActive(true);
                 
 
                 
                 
-            }
-            tutorialText.text = tutorials.tutorial_Instructions[currentIndex].ToString();
+        }
+        tutorialText.text = tutorials.tutorial_Instructions[currentIndex].ToString();
 
             
             
@@ -151,6 +137,7 @@ public class TutorialManager : MonoBehaviour
     public void DeactivateTutorial()
     {
         tutuorialPanel.SetActive(false);
+        Time.timeScale = 1;
     }
     public void ChangePrevious()
     {

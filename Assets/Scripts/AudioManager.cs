@@ -38,6 +38,7 @@ public class AudioManager : MonoBehaviour
     {
 
         Play("Background");
+        // StopAudio("GamePlay");
 
     }
 
