@@ -2884,7 +2884,7 @@ MonoBehaviour:
   nextButton: {fileID: 1431255776}
   contButton: {fileID: 1832164986}
   currentIndex: 0
-  tutuorialPanel: {fileID: 1719440417}
+  tutuorialPanel: {fileID: 1416918375}
   canJump: 0
   amtOfGameplays: 0
 --- !u!4 &1216163048
@@ -3156,7 +3156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1416918376
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3989,7 +3989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1719440418
 RectTransform:
   m_ObjectHideFlags: 0
