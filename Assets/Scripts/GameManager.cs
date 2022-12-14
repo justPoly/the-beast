@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public int highScore;
     public bool isGameOver;
     public bool StartGame;
+    public int amtOfGameplays;
 
     public static GameManager instance;
 
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
         highScore =PlayerPrefs.GetInt("HighScore", score);
 
-        int amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING", 0);
+        amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING", amtOfGameplays);
         if(amtOfGameplays == 0)
         {
             PlayerPrefs.SetInt("FIRSTTIMEOPENING", 1);
