@@ -16,9 +16,10 @@ public class GameManager : MonoBehaviour
   
     public GameObject GameOverPanel;
     public int highScore;
+    public TextMeshProUGUI finalgameoverScore;
     public bool isGameOver;
     public bool StartGame;
-    public int amtOfGameplays;
+    // public int amtOfGameplays;
 
     public static GameManager instance;
 
@@ -54,9 +55,9 @@ public class GameManager : MonoBehaviour
             score = (int)distance;
             scoreText.text = "Score: " + score.ToString();
             
-            highScoreText.text = "High Score: " + HighScore().ToString();
+            highScoreText.text = "Best Score: " + HighScore().ToString();
 
-            
+            finalgameoverScore.text = "High Score: " + score.ToString();
         }
         
         
