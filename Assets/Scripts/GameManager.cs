@@ -34,11 +34,11 @@ public class GameManager : MonoBehaviour
     {
         highScore =PlayerPrefs.GetInt("HighScore", score);
 
-        amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING", amtOfGameplays);
-        if(amtOfGameplays == 0)
-        {
-            PlayerPrefs.SetInt("FIRSTTIMEOPENING", 1);
-        }
+        // amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING", amtOfGameplays);
+        // if(amtOfGameplays == 0)
+        // {
+        //     PlayerPrefs.SetInt("FIRSTTIMEOPENING", 1);
+        // }
         
 
         

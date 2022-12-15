@@ -13,6 +13,11 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] 
     private Transform target;
 
+    // void Awake()
+    // {
+    //     offset = transform.position = target.position;
+    // }
+
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -20,7 +25,8 @@ public class CameraFollow : MonoBehaviour
     
     private void FixedUpdate()
     {
-        Vector3 targetPosition = target.position +offset;
+        Vector3 targetPosition = target.position + offset;
+        targetPosition.y = 5f;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothtime);
     }
     
