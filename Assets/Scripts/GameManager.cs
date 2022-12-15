@@ -41,7 +41,12 @@ public class GameManager : MonoBehaviour
         //     PlayerPrefs.SetInt("FIRSTTIMEOPENING", 1);
         // }
         
-
+        if(PlayerPrefs.GetInt("FirstTime") == 0 && score == highScore)
+        {
+              PlayerPrefs.SetInt("FirstTime", 1);
+              Debug.Log("Let it Be!");
+        }
+       
         
         
     }
@@ -60,7 +65,17 @@ public class GameManager : MonoBehaviour
             finalgameoverScore.text = "High Score: " + score.ToString();
         }
         
-        
+        //  PlayerPrefs.DeleteAll();
+    }
+
+    void LateUpdate()
+    {
+        if (highScore > 50 && highScore == score)
+        {
+            Debug.Log("Hey!");
+            // StartCoroutine(DistanceApplaud());
+        }
+       
     }
     public int HighScore()
     {
