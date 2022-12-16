@@ -6364,9 +6364,29 @@ PrefabInstance:
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 479924912}
+    - target: {fileID: 1429109147212369307, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_text
+      value: Loading..
+      objectReference: {fileID: 0}
     - target: {fileID: 6248982053812096869, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_Name
       value: LoadingCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7213986231725912746, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6864,7 +6884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 8, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1930971989
