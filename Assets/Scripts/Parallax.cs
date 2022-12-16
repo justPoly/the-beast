@@ -1,30 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+using TMPro;
 
 public class Parallax : MonoBehaviour
 {
-    private float length, startpos;
-    //public GameObject cam;
-    public Transform player;
-    public float parallaxEffect;
+
+    [SerializeField] private Vector2 parallaxEffectMultiplier;
+    private Transform cameraTRansform;
+    private Vector3 lastCameraPosition;
+    private float textureUnitSizeX;
+
+   
 
     private void Start()
     {
-        //startpos = transform.position.x;
-        if (player == null)
-        {
-            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        cameraTRansform = Camera.main.transform;
+        lastCameraPosition = cameraTRansform.position;
+        Sprite sprite = GetComponent<SpriteRenderer>().sprite;
+        Texture2D texture = sprite.texture;
+        textureUnitSizeX = texture.width/ sprite.pixelsPerUnit; 
         }
-        startpos = player.transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
-    }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
-        startpos = player.transform.position.x;
-        float temp = transform.position.x;
-        transform.Translate(Vector3.left * (1 - parallaxEffect) * 0.05f * 2.5f);
-        if (temp < startpos - length) transform.position = new Vector3(startpos, player.position.y, transform.position.z);
-    }
+        Vector3 deltaMovement = cameraTRansform.position - lastCameraPosition;
+        transform.position += new Vector3(deltaMovement.x* parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);
+        lastCameraPosition = cameraTRansform.position;
+        if(Mathf.Abs(cameraTRansform.position.x-transform.position.x) >= textureUnitSizeX)
+        {
+            float offsetPositionX = (cameraTRansform.position.x - transform.position.x) % textureUnitSizeX; 
+            transform.position = new Vector3(cameraTRansform.position.x, transform.position.y);
+        }
+        }
 }
