@@ -60,9 +60,9 @@ public class GameManager : MonoBehaviour
             score = (int)distance;
             scoreText.text = "Score: " + score.ToString();
             
-            highScoreText.text = "Score: " + HighScore().ToString();
+            highScoreText.text = "Best Score: " + HighScore().ToString();
 
-            finalgameoverScore.text = "High Score: " + score.ToString();
+            finalgameoverScore.text = "Score: " + score.ToString();
         }
         
         //  PlayerPrefs.DeleteAll();
