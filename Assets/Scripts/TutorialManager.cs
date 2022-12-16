@@ -32,7 +32,7 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         
-        // PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
         tutorialText.text = tutorials.tutorial_Instructions[0].ToString();
         amtOfGameplays = PlayerPrefs.GetInt("FIRSTTIMEOPENING",amtOfGameplays);
         Debug.Log("tutorials.tutorial_Instructions.Length " + tutorials.tutorial_Instructions.Length);
@@ -119,7 +119,6 @@ public class TutorialManager : MonoBehaviour
         
         if (currentIndex >= tutorials.tutorial_Instructions.Length)
         {
-            currentIndex = 3;
             contButton.SetActive(true);
             nextButton.SetActive(false);
             
