@@ -25,6 +25,6 @@ public class Parallax : MonoBehaviour
         startpos = player.transform.position.x;
         float temp = transform.position.x;
         transform.Translate(Vector3.left * (1 - parallaxEffect) * 0.05f * 2.5f);
-        if (temp < startpos - length) transform.position = new Vector3(startpos, player.transform.y, transform.position.z);
+        if (temp < startpos - length) transform.position = new Vector3(startpos, player.position.y, transform.position.z);
     }
 }
