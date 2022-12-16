@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &208038415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7918489353683273706, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
+  m_PrefabInstance: {fileID: 7918489352649278148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &295750969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2753,6 +2764,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792776977482150507, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7213986231725912746, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -2885,7 +2912,7 @@ PrefabInstance:
     - target: {fileID: 9199112511031022952, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
       propertyPath: img
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 208038415}
     - target: {fileID: 9199112511031022953, guid: c6fe3e94fef717c4abfff5a4cc8ce03c, type: 3}
       propertyPath: m_RootOrder
       value: 0
