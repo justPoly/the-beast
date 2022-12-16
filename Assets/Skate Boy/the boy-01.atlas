@@ -1,0 +1,111 @@
+
+the boy-01.png
+size: 421,258
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Head
+  rotate: false
+  xy: 2, 4
+  size: 257, 252
+  orig: 259, 254
+  offset: 1, 1
+  index: -1
+Layer 1
+  rotate: true
+  xy: 325, 74
+  size: 70, 28
+  orig: 72, 30
+  offset: 1, 1
+  index: -1
+Skateboard
+  rotate: true
+  xy: 261, 35
+  size: 221, 17
+  orig: 223, 20
+  offset: 1, 2
+  index: -1
+body
+  rotate: false
+  xy: 280, 146
+  size: 76, 110
+  orig: 78, 112
+  offset: 1, 1
+  index: -1
+left foot
+  rotate: true
+  xy: 355, 92
+  size: 52, 32
+  orig: 54, 34
+  offset: 1, 1
+  index: -1
+left hand
+  rotate: true
+  xy: 261, 2
+  size: 31, 98
+  orig: 66, 98
+  offset: 35, 0
+  index: -1
+left leg
+  rotate: false
+  xy: 361, 2
+  size: 28, 33
+  orig: 30, 34
+  offset: 1, 1
+  index: -1
+left trouser
+  rotate: false
+  xy: 358, 212
+  size: 39, 44
+  orig: 41, 46
+  offset: 1, 1
+  index: -1
+neck
+  rotate: true
+  xy: 325, 37
+  size: 35, 50
+  orig: 37, 52
+  offset: 1, 1
+  index: -1
+right foot
+  rotate: true
+  xy: 377, 38
+  size: 52, 32
+  orig: 54, 34
+  offset: 1, 1
+  index: -1
+right hand
+  rotate: false
+  xy: 280, 46
+  size: 43, 98
+  orig: 43, 98
+  offset: 0, 0
+  index: -1
+right leg
+  rotate: false
+  xy: 391, 3
+  size: 28, 33
+  orig: 30, 34
+  offset: 1, 1
+  index: -1
+right trouser
+  rotate: false
+  xy: 358, 166
+  size: 39, 44
+  orig: 41, 46
+  offset: 1, 1
+  index: -1
+tyre 1
+  rotate: true
+  xy: 389, 135
+  size: 29, 28
+  orig: 31, 30
+  offset: 1, 1
+  index: -1
+tyre 2
+  rotate: false
+  xy: 389, 105
+  size: 28, 28
+  orig: 30, 30
+  offset: 1, 1
+  index: -1

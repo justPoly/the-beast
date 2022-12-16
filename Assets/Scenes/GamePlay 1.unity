@@ -851,9 +851,9 @@ MonoBehaviour:
   OnGameEnded: {fileID: 11400000, guid: ef3aae6105f1c2d48a9879e2569b192a, type: 2}
   GameOverPanel: {fileID: 573926511}
   highScore: 0
-  finalgameoverScore: {fileID: 789219315}
   isGameOver: 0
   StartGame: 0
+  amtOfGameplays: 0
 --- !u!4 &315008375
 Transform:
   m_ObjectHideFlags: 0
@@ -2877,14 +2877,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorials: {fileID: 11400000, guid: 9c93fc522fffa844bb1e1098e457e592, type: 2}
-  tutorialText: {fileID: 0}
+  tutorialText: {fileID: 579921683}
   Text: {fileID: 0}
   buttonText: {fileID: 0}
-  hand: {fileID: 0}
-  nextButton: {fileID: 0}
-  contButton: {fileID: 0}
+  hand: {fileID: 569722194}
+  nextButton: {fileID: 1431255776}
+  contButton: {fileID: 1832164986}
   currentIndex: 0
-  tutuorialPanel: {fileID: 0}
+  tutuorialPanel: {fileID: 1416918375}
   canJump: 0
   amtOfGameplays: 0
 --- !u!4 &1216163048

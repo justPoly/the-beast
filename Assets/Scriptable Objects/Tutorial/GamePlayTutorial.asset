@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GamePlayTutorial
   m_EditorClassIdentifier: 
   tutorial_Instructions:
-  - Breaking News
-  - A strange beast that appears to be indestructable have taken over the township
-  - ' Residents are adviced to be vigilant and lookout for themselves'
-  - Be Careful!
+  - Hi
+  - Tap on the screen to jump over obstacles
+  - Long press on the screen to jump higher
+  - Hurry
