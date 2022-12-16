@@ -4,36 +4,27 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    public float speed;
-    private float x;
-    public float PontoDeDestino;
-    public float PontoOriginal;
+    private float length, startpos;
+    //public GameObject cam;
+    public Transform player;
+    public float parallaxEffect;
 
-
-
-
-    // Use this for initialization
-    void Start () {
-        //PontoOriginal = transform.position.x;
-    }
-    
-    // Update is called once per frame
-    void Update () {
-
-
-        x = transform.position.x;
-        x += speed * Time.deltaTime;
-        transform.position = new Vector3 (x, transform.position.y, transform.position.z);
-
-
-
-        if (x <= PontoDeDestino){
-
-            
-            x = PontoOriginal;
-            transform.position = new Vector3 (x, transform.position.y, transform.position.z);
+    private void Start()
+    {
+        //startpos = transform.position.x;
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         }
+        startpos = player.transform.position.x;
+        length = GetComponent<SpriteRenderer>().bounds.size.x;
+    }
 
-
+    private void FixedUpdate()
+    {
+        startpos = player.transform.position.x;
+        float temp = transform.position.x;
+        transform.Translate(Vector3.left * (1 - parallaxEffect) * 0.05f * 2.5f);
+        if (temp < startpos - length) transform.position = new Vector3(startpos, player.position.y, transform.position.z);
     }
 }
