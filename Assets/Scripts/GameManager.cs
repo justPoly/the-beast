@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
             
             highScoreText.text = "Best Score: " + HighScore().ToString();
 
-            finalgameoverScore.text = "High Score: " + score.ToString();
+            finalgameoverScore.text = "Score: " + score.ToString();
         }
         
         //  PlayerPrefs.DeleteAll();

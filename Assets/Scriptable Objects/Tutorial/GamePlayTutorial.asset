@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: GamePlayTutorial
   m_EditorClassIdentifier: 
   tutorial_Instructions:
-  - Hi
-  - Tap on the screen to jump over obstacles
-  - Long press on the screen to jump higher
-  - Hurry
+  - Breaking News
+  - A strange beast that appears to be indestructable have taken over the township
+  - Residents are adviced to be vigilant and lookout for themselves
+  - To survive you will have to tap on the screen to jump
+  - And to jump even higher tap on the screen longer
+  - Be Careful!

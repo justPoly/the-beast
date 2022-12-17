@@ -1,39 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+using TMPro;
 
 public class Parallax : MonoBehaviour
 {
-    public float speed;
-    private float x;
-    public float PontoDeDestino;
-    public float PontoOriginal;
 
+    [SerializeField] private Vector2 parallaxEffectMultiplier;
+    private Transform cameraTRansform;
+    private Vector3 lastCameraPosition;
+    private float textureUnitSizeX;
 
+   
 
-
-    // Use this for initialization
-    void Start () {
-        //PontoOriginal = transform.position.x;
-    }
-    
-    // Update is called once per frame
-    void Update () {
-
-
-        x = transform.position.x;
-        x += speed * Time.deltaTime;
-        transform.position = new Vector3 (x, transform.position.y, transform.position.z);
-
-
-
-        if (x <= PontoDeDestino){
-
-            
-            x = PontoOriginal;
-            transform.position = new Vector3 (x, transform.position.y, transform.position.z);
+    private void Start()
+    {
+        cameraTRansform = Camera.main.transform;
+        lastCameraPosition = cameraTRansform.position;
+        Sprite sprite = GetComponent<SpriteRenderer>().sprite;
+        Texture2D texture = sprite.texture;
+        textureUnitSizeX = texture.width/ sprite.pixelsPerUnit; 
         }
 
-
-    }
+    private void LateUpdate()
+    {
+        Vector3 deltaMovement = cameraTRansform.position - lastCameraPosition;
+        transform.position += new Vector3(deltaMovement.x* parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);
+        lastCameraPosition = cameraTRansform.position;
+        if(Mathf.Abs(cameraTRansform.position.x-transform.position.x) >= textureUnitSizeX)
+        {
+            float offsetPositionX = (cameraTRansform.position.x - transform.position.x) % textureUnitSizeX; 
+            transform.position = new Vector3(cameraTRansform.position.x, transform.position.y);
+        }
+        }
 }
