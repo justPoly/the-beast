@@ -1,0 +1,2 @@
+*.bundle[[:space:]]filter=lfs[[:space:]]diff=lfs[[:space:]]merge=lfs[[:space:]]-text filter=lfs diff=lfs merge=lfs -text
+*.bundle filter=lfs diff=lfs merge=lfs -text
