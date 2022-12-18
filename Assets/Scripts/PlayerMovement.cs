@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [FancyHeader("PLAYER MOVEMENT", 3f, "#D4AF37", 8.5f, order = 0)]
     [Space]
 
-    [Header("Moving")]
+    [Header("Movement")]
     private Rigidbody2D rb;
     public bool isGrounded;
     public int speed;
