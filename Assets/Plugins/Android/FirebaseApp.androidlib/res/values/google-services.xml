@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_android_client_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">453034505537</string>
+  <string name="google_storage_bucket" translatable="false">the-beast-4438d.appspot.com</string>
+  <string name="project_id" translatable="false">the-beast-4438d</string>
+  <string name="google_api_key" translatable="false">AIzaSyDyZtgA51WqesnVp9qMiFjdk997H4-QpiM</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDyZtgA51WqesnVp9qMiFjdk997H4-QpiM</string>
+  <string name="google_app_id" translatable="false">1:453034505537:android:ee7b3ab6d4a005b46d9dc0</string>
+  <string name="default_android_client_id" translatable="false">453034505537-08r2ta4ntap73kcm3nsg0dl0rqp4t7r4.apps.googleusercontent.com</string>
+  <string name="default_web_client_id" translatable="false">453034505537-e93b276glq4adr8tt18ne90dcmnqgicm.apps.googleusercontent.com</string>
+</resources>
