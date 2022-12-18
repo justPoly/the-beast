@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7c829cfbb189a4a8880e6005baaa59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Character Selection
+  sceneName: Main Menu
   countDownTime: 2
   sceneFader: {fileID: 0}
 --- !u!1 &8645344964025477066
