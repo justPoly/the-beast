@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "453034505537",
+    "project_id": "the-beast-4438d",
+    "storage_bucket": "the-beast-4438d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453034505537:android:ee7b3ab6d4a005b46d9dc0",
+        "android_client_info": {
+          "package_name": "com.maliyo.thebeast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453034505537-08r2ta4ntap73kcm3nsg0dl0rqp4t7r4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maliyo.thebeast",
+            "certificate_hash": "e8f1b137a076f9717327586d55c7cef47ce9369f"
+          }
+        },
+        {
+          "client_id": "453034505537-e93b276glq4adr8tt18ne90dcmnqgicm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyZtgA51WqesnVp9qMiFjdk997H4-QpiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453034505537-e93b276glq4adr8tt18ne90dcmnqgicm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int score;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
+    public TextMeshProUGUI gameOverhighScoreText;
 
     [Header("GameEvent")]
     public GameEvent OnGameEnded;
@@ -41,11 +42,11 @@ public class GameManager : MonoBehaviour
         //     PlayerPrefs.SetInt("FIRSTTIMEOPENING", 1);
         // }
         
-        if(PlayerPrefs.GetInt("FirstTime") == 0 && score == highScore)
-        {
-              PlayerPrefs.SetInt("FirstTime", 1);
-              Debug.Log("Let it Be!");
-        }
+        // if(PlayerPrefs.GetInt("FirstTime") == 0 && score == highScore)
+        // {
+        //       PlayerPrefs.SetInt("FirstTime", 1);
+        //       Debug.Log("Let it Be!");
+        // }
        
         
         
@@ -63,6 +64,8 @@ public class GameManager : MonoBehaviour
             highScoreText.text = "Best Score: " + HighScore().ToString();
 
             finalgameoverScore.text = "Score: " + score.ToString();
+
+            gameOverhighScoreText.text = "Best Score: " + HighScore().ToString();
         }
         
         //  PlayerPrefs.DeleteAll();
