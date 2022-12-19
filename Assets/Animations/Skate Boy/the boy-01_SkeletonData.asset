@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
   m_Name: the boy-01_SkeletonData
   m_EditorClassIdentifier: 
-  atlasAssets: []
+  atlasAssets:
+  - {fileID: 11400000, guid: 3b7aae8d64d1bd44080b52a0a9c26c0f, type: 2}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: 70e6c064a73f89045b21e8acf47fdaa8, type: 3}
   isUpgradingBlendModeMaterials: 0
@@ -27,4 +28,4 @@ MonoBehaviour:
   toAnimation: []
   duration: []
   defaultMix: 0.2
-  controller: {fileID: 0}
+  controller: {fileID: 9100000, guid: 5fc8b7c1ce4e51243b91d7a23eb22efd, type: 2}
