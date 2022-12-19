@@ -1,0 +1,139 @@
+
+The Beast_Creature_Assets_00.png
+size: 2903,451
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Jaw
+  rotate: false
+  xy: 2592, 208
+  size: 252, 241
+  orig: 252, 241
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 567, 129
+  size: 490, 320
+  orig: 490, 320
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 13
+  size: 436, 563
+  orig: 436, 563
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1059, 70
+  size: 422, 379
+  orig: 422, 461
+  offset: 0, 82
+  index: -1
+left foot
+  rotate: false
+  xy: 2039, 25
+  size: 266, 193
+  orig: 268, 195
+  offset: 1, 1
+  index: -1
+left lower arm
+  rotate: true
+  xy: 1818, 12
+  size: 169, 219
+  orig: 169, 219
+  offset: 0, 0
+  index: -1
+left lower leg
+  rotate: true
+  xy: 2830, 57
+  size: 149, 71
+  orig: 151, 73
+  offset: 1, 1
+  index: -1
+left paw
+  rotate: true
+  xy: 855, 6
+  size: 121, 179
+  orig: 121, 179
+  offset: 0, 0
+  index: -1
+left upper arm
+  rotate: true
+  xy: 567, 2
+  size: 125, 286
+  orig: 125, 286
+  offset: 0, 0
+  index: -1
+left upper leg
+  rotate: false
+  xy: 1483, 163
+  size: 270, 286
+  orig: 272, 287
+  offset: 1, 1
+  index: -1
+right foot
+  rotate: true
+  xy: 2307, 8
+  size: 199, 236
+  orig: 199, 236
+  offset: 0, 0
+  index: -1
+right foot copy
+  rotate: true
+  xy: 2307, 8
+  size: 199, 236
+  orig: 199, 236
+  offset: 0, 0
+  index: -1
+right lower arm
+  rotate: false
+  xy: 2332, 209
+  size: 258, 240
+  orig: 258, 240
+  offset: 0, 0
+  index: -1
+right lower leg
+  rotate: true
+  xy: 2749, 50
+  size: 156, 79
+  orig: 156, 79
+  offset: 0, 0
+  index: -1
+right lower leg copy
+  rotate: true
+  xy: 2749, 50
+  size: 156, 79
+  orig: 156, 79
+  offset: 0, 0
+  index: -1
+right paw
+  rotate: true
+  xy: 2545, 70
+  size: 136, 202
+  orig: 136, 202
+  offset: 0, 0
+  index: -1
+right upper arm
+  rotate: false
+  xy: 1755, 183
+  size: 280, 266
+  orig: 280, 266
+  offset: 0, 0
+  index: -1
+right upper leg
+  rotate: true
+  xy: 1483, 13
+  size: 148, 333
+  orig: 148, 333
+  offset: 0, 0
+  index: -1
+right upper leg copy
+  rotate: true
+  xy: 2037, 220
+  size: 229, 293
+  orig: 229, 293
+  offset: 0, 0
+  index: -1
