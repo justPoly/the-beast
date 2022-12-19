@@ -98,16 +98,16 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         isGameOver = true;
-        GameOverPanel.SetActive(true);
-        OnGameEnded.Raise();
-        //
-        
-        PlayerMovement.instance.speed = 0;
-        
-
+        StartCoroutine(GameOverDelay());
     }
     
-
+ private IEnumerator GameOverDelay()
+ {
+      yield return new WaitForSeconds(2);
+      GameOverPanel.SetActive(true);
+      OnGameEnded.Raise();
+      PlayerMovement.instance.speed = 0;
+ }
 
 }
 
