@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c37e65789581d242886980c50fe13f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.6, y: 0.6}
+  parallaxEffectMultiplier: {x: 0.6, y: 0.9}
 --- !u!212 &337558762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -911,12 +911,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -15
-  m_Sprite: {fileID: 21300000, guid: bb4ce06256cb5334695c30fd5ddbc9b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfc35bfa46cf9f0449876fa0d3c6cac6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 226.96681, y: 1.5214268}
+  m_Size: {x: 226.96681, y: 2.6010873}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -930,7 +930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337558760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 268078468}
@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c37e65789581d242886980c50fe13f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.8, y: 0.8}
+  parallaxEffectMultiplier: {x: 0.8, y: 0.6}
 --- !u!212 &594267603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3006,8 +3006,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 21300000, guid: 312fb56c51061e048a38418e38b45382, type: 3}
-  m_Color: {r: 0.3490566, g: 0.34411713, b: 0.34411713, a: 0.80784315}
+  m_Sprite: {fileID: 21300000, guid: 78ec5e0d3eb1dff4a9ea801b81932719, type: 3}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.80784315}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -3043,7 +3043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c37e65789581d242886980c50fe13f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.4, y: 0.4}
+  parallaxEffectMultiplier: {x: 0.4, y: 0.15}
 --- !u!1 &1163744095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8901715427504890866, guid: 447ffacc8467c0d4ab272e6022dc180a, type: 3}
@@ -5198,7 +5198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73da5fb4cbde78b4aafe7cb655216a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: -10, z: -12}
+  offset: {x: 4, y: -10, z: -12}
   smoothtime: 0.25
   target: {fileID: 0}
 --- !u!114 &2009423287
