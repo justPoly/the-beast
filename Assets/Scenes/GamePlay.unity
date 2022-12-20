@@ -488,19 +488,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6306012555550667722, guid: be71506e0930faa4abc131d25a4d1c2b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.94510186
+      value: 0.60250247
       objectReference: {fileID: 0}
     - target: {fileID: 6306012555550667722, guid: be71506e0930faa4abc131d25a4d1c2b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.55501807
+      value: 0.3714787
       objectReference: {fileID: 0}
     - target: {fileID: 6306012555550667722, guid: be71506e0930faa4abc131d25a4d1c2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.31446204
+      value: -0.42176184
       objectReference: {fileID: 0}
     - target: {fileID: 6306012555550667722, guid: be71506e0930faa4abc131d25a4d1c2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7131258
+      value: -0.36084795
       objectReference: {fileID: 0}
     - target: {fileID: 6306012555550667722, guid: be71506e0930faa4abc131d25a4d1c2b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2680,7 +2680,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -2751,11 +2751,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paths:
-  - {fileID: 5871933531175951131, guid: b565cc30435d4e2448e9d2241c0c05d0, type: 3}
   - {fileID: 5871933531175951131, guid: 680eb42d6eb9dec45a9d6f16fb906703, type: 3}
-  - {fileID: 8519644963860753486, guid: 8d32bf3aa264ab148afe11f79cc47a00, type: 3}
-  - {fileID: 1041425046015247553, guid: 9d8b7b30a60dd544aab0ccfcb61a9eab, type: 3}
-  - {fileID: 7733921781450900152, guid: 647fb5d8089f89248addd1b3d1bfecaf, type: 3}
+  - {fileID: 5871933531175951131, guid: 680eb42d6eb9dec45a9d6f16fb906703, type: 3}
+  - {fileID: 5871933531175951131, guid: 680eb42d6eb9dec45a9d6f16fb906703, type: 3}
+  - {fileID: 5871933531175951131, guid: 680eb42d6eb9dec45a9d6f16fb906703, type: 3}
+  - {fileID: 5871933531175951131, guid: 680eb42d6eb9dec45a9d6f16fb906703, type: 3}
   nextPathPosition: {x: 0, y: 0, z: 0}
   pathDrawDistance: 80
   pathDeleteDistance: 40
@@ -5657,7 +5657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73da5fb4cbde78b4aafe7cb655216a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 4, y: -10, z: -12}
+  offset: {x: 10, y: -10, z: -12}
   smoothtime: 0.25
   target: {fileID: 0}
 --- !u!114 &2009423287
