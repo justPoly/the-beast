@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Character 3
   m_EditorClassIdentifier: 
   charName: Goo
+  isUnlocked: 0
+  characterAmount: 200
   playerPrefab: {fileID: 2179711480712036646, guid: d963bcf60e52fed4e9113731c1bc6ad7, type: 3}

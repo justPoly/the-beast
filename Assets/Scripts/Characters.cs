@@ -7,8 +7,13 @@ public class Characters : ScriptableObject
     [Space]
     public string charName;
     [Space]
+    public bool isUnlocked;
+    [Space]
+    public int characterAmount;
+    [Space]
     [ShowAssetPreview]
     public GameObject playerPrefab;
+    
 
     // Start is called before the first frame update
     void Start()
