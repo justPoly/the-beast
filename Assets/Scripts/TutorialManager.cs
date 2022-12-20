@@ -116,14 +116,7 @@ public class TutorialManager : MonoBehaviour
 
         currentIndex++;
    
-        if(currentIndex == 8)
-        {
-            Timer.Register(.33f, () =>
-            {
-                
-                LeanTween.moveLocal(hand.transform.GetChild(0).gameObject, new Vector3(0, 2400, 0), 1.0f).setEase(LeanTweenType.easeInOutBack);
-            });
-        }
+        
         if (currentIndex >= tutorials.tutorial_Instructions.Length)
         {
             contButton.SetActive(true);
