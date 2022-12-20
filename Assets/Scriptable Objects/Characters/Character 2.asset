@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Character 2
   m_EditorClassIdentifier: 
   charName: Mil
+  isUnlocked: 0
+  characterAmount: 200
   playerPrefab: {fileID: 7235162867899525990, guid: 1148f086c553a554da587cce44ef3217, type: 3}

@@ -49,8 +49,10 @@ namespace Michsky.UI.Freebie
             if(characterID == 0)
             {
                 characterImage.sprite = characterImage.sprite;
+                GameStateManager.CharacterManager.gameCharacters[characterID].isUnlocked = true;
+                enableSelecting = true;
             }
-        
+            
         }
 
         public void UpdateCharacter()
