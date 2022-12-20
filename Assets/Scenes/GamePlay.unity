@@ -2588,7 +2588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 8
   isGrounded: 0
-  speed: 8
+  speed: 18
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 256

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Character 1
   m_EditorClassIdentifier: 
   charName: Chi
-  playerPrefab: {fileID: 2179711480712036646, guid: 63596b88992a34f4fbf4ddfbad835489, type: 3}
+  playerPrefab: {fileID: 425544783697164977, guid: 45e6b040f6b8d7a4d96c04d27b3c53cc, type: 3}
