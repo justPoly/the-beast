@@ -9,8 +9,8 @@ public class CoinManager : MonoBehaviour
     public TextMeshProUGUI coinText;
     void Start()
     {
-        coinCount=PlayerPrefs.GetInt("CoinAmount", coinCount);
-        coinText.text = $"Coins: {coinCount}";
+        coinCount = PlayerPrefs.GetInt("CoinAmount", coinCount);
+        coinText.text = $"Coin: {coinCount}";
     }
     void Update()
     {
@@ -29,6 +29,6 @@ public class CoinManager : MonoBehaviour
     {
         coinCount++;
         PlayerPrefs.SetInt("CoinAmount", coinCount);
-        coinText.text = $"Coins: {coinCount}";
+        coinText.text = $"Coin: {coinCount}";
     }
 }

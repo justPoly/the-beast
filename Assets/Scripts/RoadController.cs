@@ -15,7 +15,7 @@ public class RoadController : MonoBehaviour
     {
         
         player = GameStateManager.CharacterManager.gameCharacters[GameStateManager.CharacterManager.currentSelected].playerPrefab;
-        GameObject clone = Instantiate(player, new Vector3(-18, 0, 0), Quaternion.identity);
+        GameObject clone = Instantiate(player, new Vector3(-65, 0, 0), Quaternion.identity);
         LoadParts();
     }
 
