@@ -16,6 +16,9 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] 
     private Transform target;
+
+    [Header("Animation")]
+    private Animator anim;
     
     // Start is called before the first frame update
     public static EnemyMovement instance;
@@ -29,6 +32,8 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         
         Collider = GetComponent<Collider2D>();
+
+        anim = GetComponentInChildren<Animator>();
 
     }
 
@@ -52,19 +57,23 @@ public class EnemyMovement : MonoBehaviour
         isGrounded = Physics2D.IsTouchingLayers(Collider, whatIsGrounded);
 
         if(hit.collider != null)
-        {
-            
+        {  
             if(hit.collider.tag == "Obstacle")
             {
                 canJump = true;
+                
                 Debug.Log(hit.collider.tag);
                 if(isGrounded == true && canJump == true)
                 {
+                    anim.SetBool("isJumping", true);
                     canJump = false;
                     isGrounded = false;
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                     
                     
+                } else
+                {
+                    anim.SetBool("isJumping", false);
                 }
             }
             
