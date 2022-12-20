@@ -40,13 +40,17 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        
+        if(Vector2.Distance(transform.position, target.position) >3)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.deltaTime);
+        //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
+        }
     }
     void FixedUpdate()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.deltaTime);
-        //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         CheckForObstacles();
         
         
