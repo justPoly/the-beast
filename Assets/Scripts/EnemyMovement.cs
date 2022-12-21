@@ -41,18 +41,25 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         
+        
+    }
+    void FixedUpdate()
+    {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         
-        if(Vector2.Distance(transform.position, target.position) >3)
+        if(Vector2.Distance(transform.position, target.position) >5)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.deltaTime);
         //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         }
         CheckForObstacles();
+<<<<<<< HEAD
     }
     void FixedUpdate()
     {
         
+=======
+>>>>>>> 787069a4e3f030d0212d1ad30b88e877066d0102
         
         
     }
