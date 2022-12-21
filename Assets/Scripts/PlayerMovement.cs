@@ -135,6 +135,13 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Death", true);
             GameManager.instance.GameOver();
         }
+        if(collision.gameObject.CompareTag("LongObstacle"))
+        {
+            rb.velocity = Vector2.zero;
+            jumpForce = 0;
+            animator.SetBool("Death", true);
+            GameManager.instance.GameOver();
+        }
         else
         {
             // animator.SetBool("Death", false);

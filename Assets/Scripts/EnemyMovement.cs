@@ -42,18 +42,18 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         
+        
+    }
+    void FixedUpdate()
+    {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
     
-        if(Vector2.Distance(transform.position, target.position) >5)
+        if(Vector2.Distance(transform.position, target.position) >8)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.fixedDeltaTime);
         //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         }
-    }
-    void FixedUpdate()
-    {
-        
         
         CheckForObstacles();
         
@@ -87,7 +87,24 @@ public class EnemyMovement : MonoBehaviour
             
             
 
-            //if(hit.collider.gameObject.name)
+            if(hit.collider.tag == "LongObstacle")
+            {
+                canJump = true;
+                
+                Debug.Log(hit.collider.tag);
+                if(isGrounded == true && canJump == true)
+                {
+                    anim.SetBool("isJumping", true);
+                    canJump = false;
+                    isGrounded = false;
+                    rb.velocity = new Vector2(rb.velocity.x, 15);
+                    
+                    
+                } else
+                {
+                    anim.SetBool("isJumping", false);
+                }
+            }
         }
     }
     
