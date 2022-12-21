@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ad689f0cd43ae4689e22846885a1d5, type: 3}
   m_Name: Character 1
   m_EditorClassIdentifier: 
-  charName: Chi
+  charName: Pirate
   isUnlocked: 1
   characterAmount: 0
-  playerPrefab: {fileID: 425544783697164977, guid: 45e6b040f6b8d7a4d96c04d27b3c53cc, type: 3}
+  playerPrefab: {fileID: 7235162867899525990, guid: 1148f086c553a554da587cce44ef3217, type: 3}

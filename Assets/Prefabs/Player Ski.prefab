@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
-  speed: 13
+  speed: 18
   groundCheck: {fileID: 0}
   whatIsGrounded:
     serializedVersion: 2
