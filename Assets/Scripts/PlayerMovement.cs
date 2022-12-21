@@ -134,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
             jumpForce = 0;
             animator.SetBool("Death", true);
             GameManager.instance.GameOver();
+            AudioManager.instance.PlayOneShot("GameOver");
         }
         if(collision.gameObject.CompareTag("LongObstacle"))
         {
@@ -141,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
             jumpForce = 0;
             animator.SetBool("Death", true);
             GameManager.instance.GameOver();
+            AudioManager.instance.PlayOneShot("GameOver");
         }
         else
         {
