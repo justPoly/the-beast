@@ -289,12 +289,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
-  speed: 18
+  speed: 13
   groundCheck: {fileID: 0}
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 256
-  jumpForce: 6
+  jumpForce: 8
   jumpTime: 0.35
   jumpTimeCounter: 0
   canJump: 0
