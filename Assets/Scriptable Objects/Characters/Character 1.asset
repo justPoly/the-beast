@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Character 1
   m_EditorClassIdentifier: 
   charName: Chi
-  isUnlocked: 0
-  characterAmount: 300
+  isUnlocked: 1
+  characterAmount: 0
   playerPrefab: {fileID: 425544783697164977, guid: 45e6b040f6b8d7a4d96c04d27b3c53cc, type: 3}

@@ -10,7 +10,7 @@ public class CoinManager : MonoBehaviour
     void Start()
     {
         coinCount = PlayerPrefs.GetInt("CoinAmount", coinCount);
-        coinText.text = $"Coin: {coinCount}";
+        coinText.text = $"{coinCount}";
     }
     void Update()
     {
