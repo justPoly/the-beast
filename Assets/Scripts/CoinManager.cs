@@ -29,6 +29,6 @@ public class CoinManager : MonoBehaviour
     {
         coinCount++;
         PlayerPrefs.SetInt("CoinAmount", coinCount);
-        coinText.text = $"Coin: {coinCount}";
+        coinText.text = $"{coinCount}";
     }
 }
