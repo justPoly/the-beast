@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
     private Collider2D Collider;
     public bool canJump;
+    Vector2 enemyPos;
 
     [SerializeField] 
     private Transform target;
@@ -35,31 +36,26 @@ public class EnemyMovement : MonoBehaviour
 
         anim = GetComponentInChildren<Animator>();
 
-    }
+        }
 
     // Update is called once per frame
     void Update()
     {
         
-        
-    }
-    void FixedUpdate()
-    {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        
+
+    
         if(Vector2.Distance(transform.position, target.position) >5)
         {
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, transform.position.y), speed *Time.fixedDeltaTime);
         //transform.Translate(Vector2.right * Time.fixedDeltaTime * speed);
         }
-        CheckForObstacles();
-<<<<<<< HEAD
     }
     void FixedUpdate()
     {
         
-=======
->>>>>>> 787069a4e3f030d0212d1ad30b88e877066d0102
+        
+        CheckForObstacles();
         
         
     }
